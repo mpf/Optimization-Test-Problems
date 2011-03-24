@@ -1,0 +1,2 @@
+#!/bin/sh
+shasum *.mod | awk '{printf("%-25s %s\n", $2, $1);}'
