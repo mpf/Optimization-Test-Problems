@@ -7,14 +7,14 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   R. Byrd,
 #   Private communication, Chicago, 1992.
- 
+
 #   SIF input: Ph. Toint, November 1992.
- 
+
 #   classification LQR2-AN-3-2
 
 param xinit{1..3};
@@ -32,7 +32,3 @@ param xinit:=
 1	5.0
 2	0.0001
 3	-0.0001;
-
-solve;
-display f;
-display x;

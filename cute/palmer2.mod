@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   M. Palmer, Edinburgh, private communication.
@@ -27,10 +27,10 @@ var C >= 0, := 1.0;
 var D >= 0, := 1.0;
 
 minimize palmer:
-	sum {m in M} ( Y[m] - 
+	sum {m in M} ( Y[m] -
 (A*(X[m]^2) + ( B / ( C + (X[m]^2)/D ) ) ) )^2;
 
-data;  
+data;
 param X:=
 1                   -1.745329
 2                   -1.570796
@@ -80,7 +80,3 @@ param Y:=
 21                 18.8548
 22                 40.149455
 23                 72.676767;
-
-solve;
-
-display A,B,C,D;

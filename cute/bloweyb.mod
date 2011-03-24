@@ -7,11 +7,11 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: a simplification of
 #   J.F. Blowey and C.M. Elliott,
-#   "The Cahn-Hilliard gradient theory for phase separation with 
+#   "The Cahn-Hilliard gradient theory for phase separation with
 #   non-smooth free energy Part II: Numerical analysis",
 #   European Journal of Applied Mathematics (3) pp 147-179, 1992.
 
@@ -30,7 +30,7 @@ param INT := N*(1+A+B-C-D);
 
 param v{i in 0..N} := if (0 <= i <= N*A) then 1.0
 		else  if (N*A+1 <= i <= N*B) then (1 - (i-N*A)*2/(N*(B-A)))
-		else  if (N*B+1 <= i <= N*C) then -1 
+		else  if (N*B+1 <= i <= N*C) then -1
 		else  if (N*C+1 <= i <= N*D) then (-1 + (i-N*C)*2/(N*(D-C)))
 		else  1.0;
 
@@ -50,7 +50,3 @@ subject to cons3{i in 1..N-1}:
 	2*u[i] - u[i+1] - u[i-1] - 1/N^2*w[i] = 0;
 subject to cons4:
 	u[N] - u[N-1] - 1/N^2*w[N] = 0;
-
-solve;
-display f;
-display u,w;	

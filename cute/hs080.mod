@@ -3,7 +3,7 @@ param u {1..5};
 
 var x {j in 1..5} >= l[j], <= u[j];
 
-minimize obj: 
+minimize obj:
   exp( prod {j in 1..5} x[j] )
   ;
 
@@ -43,11 +43,3 @@ let x[5] := -1;
 #let x[5] := -0.7636450;
 
 data;
-
-solve;
-
-display x;
-
-display obj;
-
-display obj - 0.0539498478;

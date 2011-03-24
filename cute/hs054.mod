@@ -7,12 +7,12 @@ param sigma{1..6};
 
 var y {j in 1..6} >= (l[j] - mu[j])/sigma[j], <= (u[j]-mu[j])/sigma[j];
 
-minimize obj: 
+minimize obj:
       ( y[1]^2 + 2*rho*y[1]*y[2] + y[2]^2 ) / (1-rho^2)
       + sum {j in 3..6} y[j]^2
   ;
 
-subject to constr1: 
+subject to constr1:
 	y[1]/sigma[2] + 4000*y[2]/sigma[1] = 2000/sigma[1] + 0.2/sigma[2];
 
 data;
@@ -69,13 +69,3 @@ let y[6] := 5.0e+7;
 #let y[6] := 1.0e+8;
 
 let {j in 1..6} y[j] := (y[j] - mu[j])/sigma[j];
-
-display -exp(-obj/2);
-
-option loqo_options $loqo_options" convex";
-
-solve;
-
-display -exp(-obj/2);
-
-display -exp(-obj/2) + exp(-27/280);

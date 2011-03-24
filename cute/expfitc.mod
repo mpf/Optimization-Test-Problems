@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   M.J.D. Powell,
@@ -41,7 +41,3 @@ subject to cons2{i in 1..R}:
 
 data;
 param pinit:= 0 1 1 1 2 6;
-
-solve;
-display f;
-display P,Q;

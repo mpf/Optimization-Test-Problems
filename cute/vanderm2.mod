@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   A. Neumaier, private communication, 1991.
@@ -19,7 +19,7 @@
 
 param N:=100;
 param al{i in 1..N} := 1+(1-i)/N;
-param a{k in 1..N} := if (k=1) then sum {i in 1..N} al[i] else 
+param a{k in 1..N} := if (k=1) then sum {i in 1..N} al[i] else
 			sum {i in 1..N} exp(k*log(al[i]));
 var x{i in 1..N} := (i-1)/N;
 
@@ -30,7 +30,3 @@ subject to cons2{k in 2..N}:
 	(sum {i in 1..N} x[i]^k - a[k])^2 = 0;
 subject to cons3{i in 2..N}:
 	x[i]-x[i-1] >= 0;
-
-solve;
-display f;
-display x;

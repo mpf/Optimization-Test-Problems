@@ -7,9 +7,9 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
-#   Source: 
+#   Source:
 #   B.N. Pshenichnyj
 #   "The Linearization Method for Constrained Optimization",
 #   Springer Verlag, SCM Series 22, Heidelberg, 1994
@@ -23,7 +23,7 @@ param xinit{i in 1..2};
 var x{i in 1..2} := xinit[i];
 
 minimize f:
-	-b[2]*x[1]-b[6]*x[2]-b[1]- ( b[3]*x[1]^2+b[4]*x[1]^3+b[5]*x[1]^4+ 
+	-b[2]*x[1]-b[6]*x[2]-b[1]- ( b[3]*x[1]^2+b[4]*x[1]^3+b[5]*x[1]^4+
 x[2]*(b[7]*x[1]+b[8]*x[1]^2+b[9]*x[1]^3+b[10]*x[1]^4) +
 b[11]*x[2]^2+b[12]*x[2]^3+b[13]*x[2]^4 + b[14]/(1+x[2]) + (b[18]*x[1] +
 b[15]*x[1]^2 + b[16]*x[1]^3)*x[2]^2 + (b[17]*x[1]^3+b[19]*x[1])*x[2]^3 +
@@ -57,7 +57,3 @@ param b:=
 18	0.0003405462
 19	-0.16638d-5
 20	-2.8673112392;
-
-solve;
-display f;
-display x;

@@ -42,7 +42,7 @@
 #LO SOLTN(50)           340.0150353685
 #LO SOLTN(100)          340.0284918253
 #LO SOLTN(500)          340.0323978636
-#LO SOLTN(1000)         
+#LO SOLTN(1000)
 	param ni := 10;
 	param alpha := 350.0;
 	param rni := 10.0;
@@ -93,14 +93,14 @@
 	var u10;
 
 minimize obj:
-	0.05*u1 * u1 + 0.05*u0 * u0 + 17.5*(cos(t1)) + 17.5*(cos(t0)) + 0.05*u2 * u2 + 
-	0.05*u1 * u1 + 17.5*(cos(t2)) + 17.5*(cos(t1)) + 0.05*u3 * u3 + 0.05*u2 * u2 + 
-	17.5*(cos(t3)) + 17.5*(cos(t2)) + 0.05*u4 * u4 + 0.05*u3 * u3 + 17.5*(cos(t4)) 
-	+ 17.5*(cos(t3)) + 0.05*u5 * u5 + 0.05*u4 * u4 + 17.5*(cos(t5)) + 
-	17.5*(cos(t4)) + 0.05*u6 * u6 + 0.05*u5 * u5 + 17.5*(cos(t6)) + 17.5*(cos(t5)) 
-	+ 0.05*u7 * u7 + 0.05*u6 * u6 + 17.5*(cos(t7)) + 17.5*(cos(t6)) + 0.05*u8 * u8 
-	+ 0.05*u7 * u7 + 17.5*(cos(t8)) + 17.5*(cos(t7)) + 0.05*u9 * u9 + 0.05*u8 * u8 
-	+ 17.5*(cos(t9)) + 17.5*(cos(t8)) + 0.05*u10 * u10 + 0.05*u9 * u9 + 
+	0.05*u1 * u1 + 0.05*u0 * u0 + 17.5*(cos(t1)) + 17.5*(cos(t0)) + 0.05*u2 * u2 +
+	0.05*u1 * u1 + 17.5*(cos(t2)) + 17.5*(cos(t1)) + 0.05*u3 * u3 + 0.05*u2 * u2 +
+	17.5*(cos(t3)) + 17.5*(cos(t2)) + 0.05*u4 * u4 + 0.05*u3 * u3 + 17.5*(cos(t4))
+	+ 17.5*(cos(t3)) + 0.05*u5 * u5 + 0.05*u4 * u4 + 17.5*(cos(t5)) +
+	17.5*(cos(t4)) + 0.05*u6 * u6 + 0.05*u5 * u5 + 17.5*(cos(t6)) + 17.5*(cos(t5))
+	+ 0.05*u7 * u7 + 0.05*u6 * u6 + 17.5*(cos(t7)) + 17.5*(cos(t6)) + 0.05*u8 * u8
+	+ 0.05*u7 * u7 + 17.5*(cos(t8)) + 17.5*(cos(t7)) + 0.05*u9 * u9 + 0.05*u8 * u8
+	+ 17.5*(cos(t9)) + 17.5*(cos(t8)) + 0.05*u10 * u10 + 0.05*u9 * u9 +
 	17.5*(cos(t10)) + 17.5*(cos(t9));
 
 subject to ex0:
@@ -143,39 +143,3 @@ subject to ex9:
 	-0.05*(sin(t10)) - 0.05*(sin(t9)) + x10 - x9 = 0;
 subject to et9:
 	t10 - t9 - 0.05*u10 - 0.05*u9 = 0;
-
-solve;
-	display t0;
-	display t1;
-	display t2;
-	display t3;
-	display t4;
-	display t5;
-	display t6;
-	display t7;
-	display t8;
-	display t9;
-	display t10;
-	display x0;
-	display x1;
-	display x2;
-	display x3;
-	display x4;
-	display x5;
-	display x6;
-	display x7;
-	display x8;
-	display x9;
-	display x10;
-	display u0;
-	display u1;
-	display u2;
-	display u3;
-	display u4;
-	display u5;
-	display u6;
-	display u7;
-	display u8;
-	display u9;
-	display u10;
-display obj;

@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: Problem 32 in
 #   J.J. More', B.S. Garbow and K.E. Hillstrom,
@@ -26,7 +26,3 @@ var x{1..N} := 1.0;
 minimize f:
 sum {i in 1..N} ((sum{j in 1..i-1} -2*x[j]/M) + x[i]*(1-2/M) + (sum {j in i+1..N} -2*x[j]/M) - 1)^2 +
 sum {i in N+1..M} (sum{j in 1..N} -2*x[j]/M - 1)^2;
-
-solve;
-display f;
-display x;

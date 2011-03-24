@@ -75,18 +75,8 @@ subject to cons3:
 subject to cons4:
 	(c * (t^2-v^2) + 2.0*a * t * v + (-0.017-c) * (u^2-w^2) + 2.0*(-0.816-a) * u * w + 3.259) = 0;
 subject to cons5:
-	(a * t * (t^2-(3.0)*v^2) + c * v * (v^2-(3.0)*t^2) + (-0.816-a) * u * (u^2-(3.0)*w^2) + 
+	(a * t * (t^2-(3.0)*v^2) + c * v * (v^2-(3.0)*t^2) + (-0.816-a) * u * (u^2-(3.0)*w^2) +
 	(-0.017-c) * w * (w^2-(3.0)*u^2) + 14.023) = 0;
 subject to cons6:
-	(c * t * (t^2-(3.0)*v^2) - a * v * (v^2-(3.0)*t^2) + (-0.017-c) * u * (u^2-(3.0)*w^2) - 
+	(c * t * (t^2-(3.0)*v^2) - a * v * (v^2-(3.0)*t^2) + (-0.017-c) * u * (u^2-(3.0)*w^2) -
 	(-0.816-a) * w * (w^2-(3.0)*u^2) - 15.467) = 0;
-
-
-solve;
-	display a;
-	display c;
-	display t;
-	display u;
-	display v;
-	display w;
-display obj;

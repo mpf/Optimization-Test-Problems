@@ -7,9 +7,9 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
-#   Source: 
+#   Source:
 #   C. Charalambous and A.R. Conn,
 #   "An efficient method to solve the minmax problem directly",
 #   SINUM 15, pp. 162-187, 1978.
@@ -33,5 +33,3 @@ subject to cons3:
 
 data;
 param xinit:= 1 1.0 2 -0.1;
-
-solve; display f; display x;

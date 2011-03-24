@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: problem 23 in
 #   D.H. Himmelblau,
@@ -51,7 +51,7 @@ subject to cons8{i in 1..5}:
 
 data;
 param a(tr):
-	1	2	3	4	5 := 
+	1	2	3	4	5 :=
 1	1	0.84	0.96	1	0.92
 2	0.95	0.83	0.95	1	0.94
 3	1	0.85	0.95	1	0.92
@@ -101,5 +101,3 @@ param c:=
 3	300
 4	150
 5	250;
-
-solve; display f; display x;

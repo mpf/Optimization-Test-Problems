@@ -20,7 +20,7 @@ subject to constr9: y[4] = 98000*x3/(y[2]*y[7] + 1000*x3);
 
 data;
 
-param a := 
+param a :=
     1	   0
     2	   0
     3	  85
@@ -63,11 +63,3 @@ repeat {
     let y[7] := 35.82 - 0.222*y[8];
     let y[4] := 98000*x3/(y[2]*y[7] + 1000*x3);
 } while abs(y4old - y[4]) > 0.001 ;
-
-display obj;
-
-solve;
-
-display obj;
-
-display obj + 1162.036507;

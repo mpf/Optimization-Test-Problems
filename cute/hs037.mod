@@ -1,6 +1,6 @@
 var x {1..3} >= 0, <= 42;
 
-minimize obj: 
+minimize obj:
   -x[1]*x[2]*x[3]
   ;
 
@@ -15,13 +15,3 @@ let x[3] := 10;
 #let x[1] := 24;
 #let x[2] := 12;
 #let x[3] := 12;
-
-display obj;
-
-solve;
-
-display x;
-
-display obj;
-
-display obj + 3456;

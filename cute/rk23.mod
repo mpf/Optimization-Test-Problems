@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   Similar ideas for 4th and 5th order pairs are discussed in:
@@ -61,12 +61,12 @@ subject to cons10:
 subject to cons11:
 	TP3-TM3-1+12*BB3*A32*C2^2 = 0;
 
-solve;
-display f;
-display 
-    C2 
+
+
+display
+    C2
 ,    A21
-,    C3 
+,    C3
 ,    A31
 ,    A32
 ,    B1

@@ -5,7 +5,7 @@ param b := asin(sqrt(5/7.2));
 param c := asin(sqrt(4/7));
 param d := asin(sqrt(2/7));
 
-minimize obj: 
+minimize obj:
   -x[1]*x[2]*x[3]
   ;
 
@@ -30,13 +30,3 @@ let x[7] := b;
 #let x[5] := d;
 #let x[6] := d;
 #let x[7] := 3.14159/2;
-
-display obj;
-
-solve;
-
-display x;
-
-display obj;
-
-display obj + 3.456;

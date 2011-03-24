@@ -1,6 +1,6 @@
 var x {1..5};
 
-minimize obj: 
+minimize obj:
   prod {j in 1..5} x[j]
   ;
 
@@ -24,11 +24,3 @@ let x[5] := -1;
 #let x[5] := -0.7636435;
 
 data;
-
-solve;
-
-display x;
-
-display obj;
-
-display obj + 2.91970041;

@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   classification QBR2-AN-V-0
 
@@ -17,5 +17,5 @@ var x{1..N} >= 0.1, <= 10.0, := 0.5;
 minimize f:
 	sum {i in 1..N} 0.5*i*(x[i]+x[((2*i-1) mod N)+1]+x[((3*i-1) mod N)+1])^2;
 
-solve; display f; 
-#display x;
+
+#

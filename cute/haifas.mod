@@ -43,7 +43,7 @@ subject to g1:
 subject to g2:
 	0 >= 6.4*0.5 * x5 * x5 + 6.4*0.5 * x5 * x11 + 1.6*0.5 * x11 * x11 - z - x10;
 subject to g3:
-	0 >= 40.0*0.5 * x10 * x10 - 80.0*0.5 * x10 * x11 + 40.0*0.5 * x11 * x11 - z - 
+	0 >= 40.0*0.5 * x10 * x10 - 80.0*0.5 * x10 * x11 + 40.0*0.5 * x11 * x11 - z -
 	x10;
 subject to g4:
 	0 >= 6.4*0.5 * x4 * x4 - 6.4*0.5 * x4 * x10 + 1.6*0.5 * x10 * x10 - z - x10;
@@ -52,25 +52,9 @@ subject to g5:
 subject to g6:
 	0 >= 6.4*0.5 * x6 * x6 + 6.4*0.5 * x6 * x12 + 1.6*0.5 * x12 * x12 - z - x10;
 subject to g7:
-	0 >= 40.0*0.5 * x11 * x11 - 80.0*0.5 * x11 * x12 + 40.0*0.5 * x12 * x12 - z - 
+	0 >= 40.0*0.5 * x11 * x11 - 80.0*0.5 * x11 * x12 + 40.0*0.5 * x12 * x12 - z -
 	x10;
 subject to g8:
 	0 >= 6.4*0.5 * x5 * x5 - 6.4*0.5 * x5 * x11 + 1.6*0.5 * x11 * x11 - z - x10;
 subject to g9:
 	0 >= 10.0*0.5 * x6 * x6 - z - x10;
-
-solve;
-	display z;
-	display x1;
-	display x2;
-	display x3;
-	display x4;
-	display x5;
-	display x6;
-	display x7;
-	display x8;
-	display x9;
-	display x10;
-	display x11;
-	display x12;
-display obj;

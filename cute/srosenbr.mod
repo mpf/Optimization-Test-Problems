@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:  problem 21 in
 #   J.J. More', B.S. Garbow and K.E. Hillstrom,
@@ -24,7 +24,3 @@ var x{i in 1..N} := if (i mod 2 == 1) then -1.2 else 1;
 
 minimize f:
 	sum {i in 1..N/2} ( 100*(x[2*i]-x[2*i-1]^2)^2 + (x[2*i-1]-1)^2 );
-
-solve;
-display f;
-display x;

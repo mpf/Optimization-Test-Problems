@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   S.S. Oren,
@@ -25,6 +25,4 @@ param N:=1000;
 var x{1..N} := 1.0;
 
 minimize f:
-	sum {i in 1..N} (i*x[i])^2; 
-
-solve; display f; display x;
+	sum {i in 1..N} (i*x[i])^2;

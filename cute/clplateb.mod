@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   J. Nocedal,
@@ -34,8 +34,4 @@ minimize f:
 	hp2*(x[i,j]-x[i-1,j])^4
 	) + sum {j in 1..p} (wght*x[p,j]);
 
-fix {j in 1..p} x[1,j] := 0.0;	
-
-solve;
-display f;
-display x;
+fix {j in 1..p} x[1,j] := 0.0;

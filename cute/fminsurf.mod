@@ -7,9 +7,9 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
-#   Source: setting the boundary free in 
+#   Source: setting the boundary free in
 #   A Griewank and Ph. Toint,
 #   "Partitioned variable metric updates for large structured
 #   optimization problems",
@@ -43,7 +43,3 @@ let {j in 1..p} x[p,j] := (j-1)*wtoe+h10;
 let {i in 2..p-1} x[i,p] := (i-1)*ston+h00;
 let {i in 2..p-1} x[i,1] := (i-1)*ston+h01;
 let {i in 2..p-1,j in 2..p-1} x[i,j] := 0.0;
-
-solve;
-display f;
-display x;

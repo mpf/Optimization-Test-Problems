@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: problem 156 (p. 51) in
 #   A.R. Buckley,
@@ -25,7 +25,3 @@ var x {1..n} := -1.0;
 
 # rvdb comment: the sum should start at 1.
 minimize obj: (x[1]-1.0)^2 + sum {j in 2..n-1} (x[j]-x[j+1])^2 + (x[n]-1.0)^2;
-
-solve;
-display x;
-display obj;

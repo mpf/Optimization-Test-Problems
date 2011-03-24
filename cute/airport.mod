@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   Contribution from a LANCELOT user.
@@ -33,7 +33,7 @@ subject to cons1 {i in 1..N}:
 
 data;
 param r:=
-1                  0.09 
+1                  0.09
 2                  0.3
 3                  0.09
 4                  0.45
@@ -163,8 +163,3 @@ param cy:=
 40                -6.4
 41                -5.1
 42                0.0;
-
-
-solve;
-display f;
-display x, y;

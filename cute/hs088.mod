@@ -10,20 +10,20 @@ var rho {j in 1..30}
     (
 	    exp(-mu[j]^2 * sum{i in 1..n} x[i]^2)
 	    +
-	    sum {ii in 2..n} 
+	    sum {ii in 2..n}
 		 2 * (-1)^(ii-1) * exp(-mu[j]^2 * sum{i in ii..n} x[i]^2)
 	    +
 	    (-1)^n
     )/mu[j]^2
     ;
 
-minimize obj: 
+minimize obj:
   sum {i in 1..n} x[i]^2
   ;
 
-subject to constr1: 
+subject to constr1:
 	sum {i in 1..30}
-	sum {j in i+1..30} 
+	sum {j in i+1..30}
 	    mu[i]^2 * mu[j]^2 * A[i] * A[j] * rho[i] * rho[j] *
 	    (sin(mu[i]+mu[j])/(mu[i]+mu[j]) + sin(mu[i]-mu[j])/(mu[i]-mu[j]))
 	+
@@ -32,7 +32,7 @@ subject to constr1:
 	    (sin(2*mu[j])/(2*mu[j]) + 1)/2
 	-
 	sum {j in 1..30}
-	    mu[j]^2 * A[j] * rho[j] * 
+	    mu[j]^2 * A[j] * rho[j] *
 	    (
 		2*sin(mu[j])/mu[j]^3 - 2*cos(mu[j])/mu[j]^2
 	    )
@@ -80,14 +80,3 @@ let {i in 1..n} x[i] := 0.5 * (-1)^(i+1);
 #printf "optimal solution as starting point \n";
 #let x[1] := 1.074319;
 #let x[1] := -0.4566137;
-
-display obj; 
-
-solve;
-
-display x;
-
-display obj;
-
-display obj - 1.36265681;
-

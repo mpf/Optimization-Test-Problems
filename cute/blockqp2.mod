@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   classification QLR2-AN-V-V
 
@@ -25,5 +25,3 @@ subject to cons1:
 	sum {i in 1..n} (x[i] + y[i]) + sum {j in 1..b} z[j] >= b+1;
 subject to cons2{i in 1..n}:
 	x[i] - y[i] + sum {j in 1..b} z[j] = b;
-
-solve;

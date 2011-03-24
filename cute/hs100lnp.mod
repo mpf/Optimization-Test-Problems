@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: problem 100 in
 #   W. Hock and K. Schittkowski,
@@ -24,7 +24,7 @@
 
 var x {1..7};
 
-minimize obj: 
+minimize obj:
   (x[1]-10)^2 + 5*(x[2]-12)^2 + x[3]^4 + 3*(x[4]-11)^2 + 10*x[5]^6
   + 7*x[6]^2 + x[7]^4 - 4*x[6]*x[7] - 10*x[6] - 8*x[7]
   ;
@@ -51,12 +51,3 @@ let x[7] := 1;
 #let x[5] := -0.6244870;
 #let x[6] := 1.038131;
 #let x[7] := 1.594227;
-
-
-solve;
-
-display x;
-
-display obj;
-
-display obj - 680.6300573;

@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: problem 35 in
 #   W. Hock and K. Schittkowski,
@@ -27,5 +27,3 @@ subject to cons1:
 	-x[1]-x[2]-2.0*x[3]+3.0 >= 0;
 subject to cons2:
 	x[2] = 0.5;
-
-solve; display f; display x;

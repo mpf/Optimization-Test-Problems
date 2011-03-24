@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:  A suggestion by Alan Edelman (MIT).
 
@@ -39,7 +39,3 @@ subject to abs_max_val{i in N, j in N}:
 
 subject to ones{i in N,j in N}:
 	abs(Q[i,j]) <= 1;
-
-solve;  
-
-display Q;

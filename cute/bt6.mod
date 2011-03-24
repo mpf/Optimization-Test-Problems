@@ -7,11 +7,11 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: problem 6 in
 #   P.T. Boggs and J.W. Tolle,
-#   "A strategy for global convergence in a sequential 
+#   "A strategy for global convergence in a sequential
 #    quadratic programming algorithm",
 #   SINUM 26(3), pp. 600-623, 1989.
 
@@ -30,7 +30,3 @@ subject to cons1:
 	x[4]*x[1]^2 + sin(x[4]-x[5]) = 2*sqrt(2.0);
 subject to cons2:
 	x[3]^4*x[2]^2 + x[2] = 8+sqrt(2.0);
-
-solve;
-display f;
-display x;

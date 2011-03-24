@@ -7,9 +7,9 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
-#   Source: 
+#   Source:
 #   a problem designed by Ph. Toint for experimenting with feasibility
 #   issues in barrier approaches to nonlinear inequality constraints.
 
@@ -26,5 +26,3 @@ subject to cons1:
 	-y+sin(x) <= 0;
 subject to cons2:
 	-y+tip*x+sin(x) >= 0;
-
-solve; display f; display x; display y;

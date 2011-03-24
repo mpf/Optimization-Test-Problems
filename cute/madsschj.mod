@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   K. Madsen and H. Schjaer-Jacobsen,
@@ -40,7 +40,3 @@ subject to cons5{k in 4..M-1 by 2}:
 	(k+2)/2+1..N} x[i] +1-2*x[(k+2)/2]^2>= 0;
 subject to cons6:
 	z-sum {i in 1..N-1} x[i] +1 - x[N]^2>= 0;
-
-solve;
-display f;
-display x; display z;

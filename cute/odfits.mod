@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: a modification of an example in
 #   L.G. Willumsen,
@@ -73,7 +73,3 @@ param:
 
 param GAMMA := 1.5;
 param ENTROP := 0.2;
-
-solve;
-display f;
-display T, F;

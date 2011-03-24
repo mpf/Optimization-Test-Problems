@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   E. Spedicato,
@@ -24,17 +24,13 @@
 
 param N := 100;
 
-var x{i in 1..N} := -8.710996D-4*((i-50)^3 + 
-		    sum {j in 1..N} sqrt(i/j)*((sin(log(sqrt(i/j))))^5+ 
+var x{i in 1..N} := -8.710996D-4*((i-50)^3 +
+		    sum {j in 1..N} sqrt(i/j)*((sin(log(sqrt(i/j))))^5+
 		    (cos(log(sqrt(i/j))))^5));
 var v{i in 1..N, j in 1..N} = sqrt (x[i]^2 +i/j);
-var alpha{i in 1..N} = 1400*x[i] + (i-50)^3 + 
-		       sum {j in 1..N} v[i,j]*((sin(log(v[i,j])))^5 + 
+var alpha{i in 1..N} = 1400*x[i] + (i-50)^3 +
+		       sum {j in 1..N} v[i,j]*((sin(log(v[i,j])))^5 +
 		       (cos(log(v[i,j])))^5);
 
 minimize f:
 sum {i in 1..N} alpha[i]^2;
-
-solve;
-display f;
-display x;

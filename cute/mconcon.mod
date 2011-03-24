@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   classification LOI2-MN-15-11
 
@@ -52,7 +52,3 @@ subject to cons12:
 	P[7] <= 914.73;
 subject to cons13:
 	F[4] <= 400;
-
-solve;
-display f;
-display P,Q,F;

@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:  Problem 23 in
 #   J.J. More', B.S. Garbow and K.E. Hillstrom,
@@ -29,7 +29,3 @@ param a := 10^-5;
 
 minimize f:
 	sum {i in 1..N} a*(x[i]-1)^2 + ( sum {j in 1..N} x[j]^2 - 1/4 )^2;
-
-solve;
-display f;
-display x;

@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:  Problem 15 in
 #   J.J. More', B.S. Garbow and K.E. Hillstrom,
@@ -45,7 +45,3 @@ param:
 9	0.0323	0.0833
 10	0.0235	0.0714
 11	0.0246	0.0625;
-
-solve;
-display f;
-display x;

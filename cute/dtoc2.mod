@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   classification OOR2-AN-V-V
 
@@ -24,5 +24,3 @@ minimize f:
 subject to cons1{t in 1..n-1,j in 1..ny}:
 	sin(y[t,j]) + sum {i in 1..nx} c[j,i]*(sin(x[t,i])) -y[t+1,j] = 0;
 fix{i in 1..ny} y[1,i] := i/(2*ny);
-solve;
-

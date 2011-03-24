@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   classification LQI2-RN-65-59
 
@@ -19,16 +19,16 @@ var Pi{1..20};
 
 param Region{1..9};
 
-param loflows{1..24};  
-param hiflows;  
-param hisupply{1..6};  
-param loprods{1..6};  
-param hiprods{1..6};  
-param lopi{1..20}; 
+param loflows{1..24};
+param hiflows;
+param hisupply{1..6};
+param loprods{1..6};
+param hiprods{1..6};
+param lopi{1..20};
 param hipi{1..20};
 
 minimize cost:
-	2.28*Prod[1] + 2.28*Prod[2] + 2.28*Prod[3] + 1.68*Prod[4] + 
+	2.28*Prod[1] + 2.28*Prod[2] + 2.28*Prod[3] + 1.68*Prod[4] +
 	1.68*Prod[5] + 1.68*Prod[6];
 subject to node1:
 	Flow[1] + Flow[2] - Supply[1] = 0;
@@ -148,13 +148,13 @@ subject to arc23:
 	(Flow[23]^2) -0.00170320*(Pi[18] - Pi[19]) = 0;
 subject to arc24:
 	(Flow[24]^2) -0.0278190*(Pi[19] - Pi[20]) = 0;
-subject to f{i in 1..24}: 
-	loflows[i] <= Flow[i] <= hiflows;  
-subject to s{i in 1..6}: 
-	Supply[i] <= hisupply[i];  
-subject to pr{i in 1..6}: 
-	loprods[i] <= Prod[i] <= hiprods[i];  
-subject to pi{i in 1..20}: 
+subject to f{i in 1..24}:
+	loflows[i] <= Flow[i] <= hiflows;
+subject to s{i in 1..6}:
+	Supply[i] <= hisupply[i];
+subject to pr{i in 1..6}:
+	loprods[i] <= Prod[i] <= hiprods[i];
+subject to pi{i in 1..20}:
 	lopi[i] <= Pi[i] <= hipi[i];
 
 data;
@@ -172,20 +172,17 @@ param Region:=
 param loflows:= 1 -220.12 2 -220.12 3 -220.12 4 -220.12 5 -220.12 6
 -220.12 7 -220.12 8 -220.12 9 -220.12 10 0 11 0 12 -220.12 13 -220.12 14
 -220.12 15 -220.12 16 -220.12 17 -220.12 18 -220.12 19 -220.12 20 -220.12
-21 -220.12 22 0 23 -220.12 24 -220.12;  
-param hiflows := 220.12;  
-param hisupply:= 1 11.594 2 8.4 3 4.8 4 22.012 5 1.2 6 0.96; 
-param loprods:= 1 8.87 2 0 3 0 4 20.344 5 0 6 0;  
-param hiprods:= 1 11.594 2 8.4 3 4.8 4 22.012 5 1.2 6 0.96;  
-param lopi:= 1 0 2 0 3 900 4 0 5 0 6 900 7 900 8 2500 9 0 10 900 11 0 12 
-900 13 0 14 0 15 900 16 2500 17 0 18 0 19 625 20 625;  
+21 -220.12 22 0 23 -220.12 24 -220.12;
+param hiflows := 220.12;
+param hisupply:= 1 11.594 2 8.4 3 4.8 4 22.012 5 1.2 6 0.96;
+param loprods:= 1 8.87 2 0 3 0 4 20.344 5 0 6 0;
+param hiprods:= 1 11.594 2 8.4 3 4.8 4 22.012 5 1.2 6 0.96;
+param lopi:= 1 0 2 0 3 900 4 0 5 0 6 900 7 900 8 2500 9 0 10 900 11 0 12
+900 13 0 14 0 15 900 16 2500 17 0 18 0 19 625 20 625;
 param hipi:= 1 5929 2 5929 3 6400 4 6400 5 5929 6 6400 7 6400 8
 4382.44 9 4382.44 10 4382.44 11 4382.44 12 4382.44 13 4382.44 14 4382.44
-15 4382.44 16 4382.44 17 4382.44 18 3969 19 4382.44 20 4382.44;  
+15 4382.44 16 4382.44 17 4382.44 18 3969 19 4382.44 20 4382.44;
 var Flow:= 1 5.797 2 5.797 3 9.997 4 9.997 5 16.076 6 4.8 7 0.766 8 -4.49 9
 11.586 10 17.2404 11 2.10363 12 17.2404 13 2.10363 14 11.5676 15 1.41145
 16 10.838 17 8.718 18 9.918 19 22.464 20 15.616 21 2.141 22 2.141 23 2.141
-24 1.919;  
-
-solve; 
-
+24 1.919;

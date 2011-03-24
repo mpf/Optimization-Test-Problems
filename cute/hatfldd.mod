@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   "The OPTIMA user manual (issue No.8, p. 35)",
@@ -52,7 +52,3 @@ param z :=
 8 0.8721
 9 0.8221
 10 0.7748 ;
-
-solve;
-display x;
-display obj;

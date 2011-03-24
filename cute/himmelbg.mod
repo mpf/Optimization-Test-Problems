@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: problem 33 in
 #   D.H. Himmelblau,
@@ -24,5 +24,3 @@ var x{1..2} := 0.5;
 
 minimize f:
 	exp(-x[1]-x[2])*(2*x[1]^2+3*x[2]^2);
-
-solve; display f; display x;

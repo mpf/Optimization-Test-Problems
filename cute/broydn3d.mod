@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:  problem 30 in
 #   J.J. More', B.S. Garbow and K.E. Hillstrom,
@@ -31,5 +31,3 @@ subject to cons2{i in 2..N-1}:
 	(-x[i-1]-2*x[i+1]+kappa2+(3-kappa1*x[i])*x[i]) = 0;
 subject to cons3:
 	(-x[N-1]+kappa2+(3-kappa1*x[N])*x[N]) = 0;
-
-solve; display f; display x;

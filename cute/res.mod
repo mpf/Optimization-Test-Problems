@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   classification NOR2-MN-20-14
 
@@ -62,9 +62,9 @@ subject to cons13:
 subject to cons14:
 	TOB-TOBLIM <= 0;
 
-solve;
-display f;
-display 
+
+
+display
     L0
 ,    N
 ,    F

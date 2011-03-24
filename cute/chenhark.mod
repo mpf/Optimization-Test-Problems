@@ -7,9 +7,9 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
-#   Source: 
+#   Source:
 #   B. Chen and P. T. Harker,
 #   SIMAX 14 (1993) 1168-1190
 
@@ -30,11 +30,9 @@ minimize f:
 	0.5*(2*x[1] - x[2])^2 +
 	0.5*(2*x[n] - x[n-1])^2 +
 	0.5*(x[n])^2 +
-	sum {i in 1..nfree+ndegen} x[i]*(-6*x_p[i] + 4*x_p[i+1] + 
+	sum {i in 1..nfree+ndegen} x[i]*(-6*x_p[i] + 4*x_p[i+1] +
 		4*x_p[i-1] -
 		x_p[i+2] - x_p[i-2]) +
 	sum {i in nfree+ndegen+1..n} x[i]*(-6*x_p[i] + 4*x_p[i+1] + 4*x_p[i-1] -
                 x_p[i+2] - x_p[i-2] + 1)
 	;
-
-solve;

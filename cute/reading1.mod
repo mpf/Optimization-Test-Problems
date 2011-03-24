@@ -7,12 +7,12 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   S. Lyle and N.K. Nichols,
 #   "Numerical Methods for Optimal Control Problems with State Constraints",
-#   Numerical Analysis Report 8/91, Dept of Mathematics, 
+#   Numerical Analysis Report 8/91, Dept of Mathematics,
 #   University of Reading, UK.
 
 #   SIF input: Nick Gould, July 1991.
@@ -32,5 +32,3 @@ subject to cons1{i in 1..n}:
 	x[i]*u[i]/(2*a) + x[i-1]*u[i-1]/(2*a) + x[i]*n - x[i-1]*n + u[i]*cos(2*pi*i/n)/(-2*a) + u[i-1]*cos(2*pi*(i-1)/n)/(-2*a) = 0;
 
 fix x[0] := 0.25;
-solve;
-

@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: Problem 121 (p. 99) in
 #   A.R. Buckley,
@@ -36,7 +36,4 @@ minimize f:
 fix x[0] := 0;
 fix x[N+1] := 0;
 
-#option loqo_options "verbose=2 timing=1 convex";	
-solve;
-display f;
-display x;
+#

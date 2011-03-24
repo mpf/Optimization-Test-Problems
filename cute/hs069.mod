@@ -10,12 +10,12 @@ param b := 1000;
 param d := 1;
 param n := 4;
 
-minimize obj: 
+minimize obj:
   ( a*n - (b*(exp(x[1])-1) - x[3])*x[4]/(exp(x[1]) - 1 + x[4]) )/x[1] ;
 
-subject to constr1: 
+subject to constr1:
     x[3] - 2*myerf(-x[2]) = 0;
-subject to constr2: 
+subject to constr2:
     x[4] = myerf(-x[2] + d*sqrt(n)) + myerf(-x[2] - d*sqrt(n));
 
 data;
@@ -44,15 +44,3 @@ let x[4] := 1;
 #let x[2] := 1.1902534;
 #let x[3] := 0.23394676;
 #let x[4] := 0.7916678;
-
-display obj;
-
-option pl_linearize 0;
-
-solve;
-
-display x;
-
-display obj;
-
-display obj + 956.71288;

@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   classification OOR2-MY-6-8
 
@@ -37,7 +37,3 @@ param: x y :=
 3	0.0	-1.0
 4	0.5	0.0
 ;
-
-solve;
-display f;
-display v1, w1, a, d, r, t;

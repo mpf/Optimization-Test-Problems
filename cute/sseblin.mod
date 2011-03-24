@@ -412,34 +412,34 @@
 	var r1_24 >= 0.0 ,  <= 6000.0 ,  := 3500;
 
 minimize obj:
-	1000.0*p11_1 + 1500.0*p21_1 + 1200.0*qh1_1 + 1200.0*s1_1 + 1200.0*qg1_1 - 
-	1200.0*qp1_1 + 1000.0*p11_2 + 1500.0*p21_2 + 1200.0*qh1_2 + 1200.0*s1_2 + 
-	1200.0*qg1_2 - 1200.0*qp1_2 + 1000.0*p11_3 + 1500.0*p21_3 + 1200.0*qh1_3 + 
-	1200.0*s1_3 + 1200.0*qg1_3 - 1200.0*qp1_3 + 1000.0*p11_4 + 1500.0*p21_4 + 
-	1200.0*qh1_4 + 1200.0*s1_4 + 1200.0*qg1_4 - 1200.0*qp1_4 + 1000.0*p11_5 + 
-	1500.0*p21_5 + 1200.0*qh1_5 + 1200.0*s1_5 + 1200.0*qg1_5 - 1200.0*qp1_5 + 
-	1000.0*p11_6 + 1500.0*p21_6 + 1200.0*qh1_6 + 1200.0*s1_6 + 1200.0*qg1_6 - 
-	1200.0*qp1_6 + 1000.0*p11_7 + 1500.0*p21_7 + 1200.0*qh1_7 + 1200.0*s1_7 + 
-	1200.0*qg1_7 - 1200.0*qp1_7 + 1000.0*p11_8 + 1500.0*p21_8 + 1200.0*qh1_8 + 
-	1200.0*s1_8 + 1200.0*qg1_8 - 1200.0*qp1_8 + 1000.0*p11_9 + 1500.0*p21_9 + 
-	1200.0*qh1_9 + 1200.0*s1_9 + 1200.0*qg1_9 - 1200.0*qp1_9 + 1000.0*p11_10 + 
-	1500.0*p21_10 + 1200.0*qh1_10 + 1200.0*s1_10 + 1200.0*qg1_10 - 1200.0*qp1_10 + 
-	1000.0*p11_11 + 1500.0*p21_11 + 1200.0*qh1_11 + 1200.0*s1_11 + 1200.0*qg1_11 - 
-	1200.0*qp1_11 + 1000.0*p11_12 + 1500.0*p21_12 + 1200.0*qh1_12 + 1200.0*s1_12 + 
-	1200.0*qg1_12 - 1200.0*qp1_12 + 1000.0*p11_13 + 1500.0*p21_13 + 1200.0*qh1_13 + 
-	1200.0*s1_13 + 1200.0*qg1_13 - 1200.0*qp1_13 + 1000.0*p11_14 + 1500.0*p21_14 + 
-	1200.0*qh1_14 + 1200.0*s1_14 + 1200.0*qg1_14 - 1200.0*qp1_14 + 1000.0*p11_15 + 
-	1500.0*p21_15 + 1200.0*qh1_15 + 1200.0*s1_15 + 1200.0*qg1_15 - 1200.0*qp1_15 + 
-	1000.0*p11_16 + 1500.0*p21_16 + 1200.0*qh1_16 + 1200.0*s1_16 + 1200.0*qg1_16 - 
-	1200.0*qp1_16 + 1000.0*p11_17 + 1500.0*p21_17 + 1200.0*qh1_17 + 1200.0*s1_17 + 
-	1200.0*qg1_17 - 1200.0*qp1_17 + 1000.0*p11_18 + 1500.0*p21_18 + 1200.0*qh1_18 + 
-	1200.0*s1_18 + 1200.0*qg1_18 - 1200.0*qp1_18 + 1000.0*p11_19 + 1500.0*p21_19 + 
-	1200.0*qh1_19 + 1200.0*s1_19 + 1200.0*qg1_19 - 1200.0*qp1_19 + 1000.0*p11_20 + 
-	1500.0*p21_20 + 1200.0*qh1_20 + 1200.0*s1_20 + 1200.0*qg1_20 - 1200.0*qp1_20 + 
-	1000.0*p11_21 + 1500.0*p21_21 + 1200.0*qh1_21 + 1200.0*s1_21 + 1200.0*qg1_21 - 
-	1200.0*qp1_21 + 1000.0*p11_22 + 1500.0*p21_22 + 1200.0*qh1_22 + 1200.0*s1_22 + 
-	1200.0*qg1_22 - 1200.0*qp1_22 + 1000.0*p11_23 + 1500.0*p21_23 + 1200.0*qh1_23 + 
-	1200.0*s1_23 + 1200.0*qg1_23 - 1200.0*qp1_23 + 1000.0*p11_24 + 1500.0*p21_24 + 
+	1000.0*p11_1 + 1500.0*p21_1 + 1200.0*qh1_1 + 1200.0*s1_1 + 1200.0*qg1_1 -
+	1200.0*qp1_1 + 1000.0*p11_2 + 1500.0*p21_2 + 1200.0*qh1_2 + 1200.0*s1_2 +
+	1200.0*qg1_2 - 1200.0*qp1_2 + 1000.0*p11_3 + 1500.0*p21_3 + 1200.0*qh1_3 +
+	1200.0*s1_3 + 1200.0*qg1_3 - 1200.0*qp1_3 + 1000.0*p11_4 + 1500.0*p21_4 +
+	1200.0*qh1_4 + 1200.0*s1_4 + 1200.0*qg1_4 - 1200.0*qp1_4 + 1000.0*p11_5 +
+	1500.0*p21_5 + 1200.0*qh1_5 + 1200.0*s1_5 + 1200.0*qg1_5 - 1200.0*qp1_5 +
+	1000.0*p11_6 + 1500.0*p21_6 + 1200.0*qh1_6 + 1200.0*s1_6 + 1200.0*qg1_6 -
+	1200.0*qp1_6 + 1000.0*p11_7 + 1500.0*p21_7 + 1200.0*qh1_7 + 1200.0*s1_7 +
+	1200.0*qg1_7 - 1200.0*qp1_7 + 1000.0*p11_8 + 1500.0*p21_8 + 1200.0*qh1_8 +
+	1200.0*s1_8 + 1200.0*qg1_8 - 1200.0*qp1_8 + 1000.0*p11_9 + 1500.0*p21_9 +
+	1200.0*qh1_9 + 1200.0*s1_9 + 1200.0*qg1_9 - 1200.0*qp1_9 + 1000.0*p11_10 +
+	1500.0*p21_10 + 1200.0*qh1_10 + 1200.0*s1_10 + 1200.0*qg1_10 - 1200.0*qp1_10 +
+	1000.0*p11_11 + 1500.0*p21_11 + 1200.0*qh1_11 + 1200.0*s1_11 + 1200.0*qg1_11 -
+	1200.0*qp1_11 + 1000.0*p11_12 + 1500.0*p21_12 + 1200.0*qh1_12 + 1200.0*s1_12 +
+	1200.0*qg1_12 - 1200.0*qp1_12 + 1000.0*p11_13 + 1500.0*p21_13 + 1200.0*qh1_13 +
+	1200.0*s1_13 + 1200.0*qg1_13 - 1200.0*qp1_13 + 1000.0*p11_14 + 1500.0*p21_14 +
+	1200.0*qh1_14 + 1200.0*s1_14 + 1200.0*qg1_14 - 1200.0*qp1_14 + 1000.0*p11_15 +
+	1500.0*p21_15 + 1200.0*qh1_15 + 1200.0*s1_15 + 1200.0*qg1_15 - 1200.0*qp1_15 +
+	1000.0*p11_16 + 1500.0*p21_16 + 1200.0*qh1_16 + 1200.0*s1_16 + 1200.0*qg1_16 -
+	1200.0*qp1_16 + 1000.0*p11_17 + 1500.0*p21_17 + 1200.0*qh1_17 + 1200.0*s1_17 +
+	1200.0*qg1_17 - 1200.0*qp1_17 + 1000.0*p11_18 + 1500.0*p21_18 + 1200.0*qh1_18 +
+	1200.0*s1_18 + 1200.0*qg1_18 - 1200.0*qp1_18 + 1000.0*p11_19 + 1500.0*p21_19 +
+	1200.0*qh1_19 + 1200.0*s1_19 + 1200.0*qg1_19 - 1200.0*qp1_19 + 1000.0*p11_20 +
+	1500.0*p21_20 + 1200.0*qh1_20 + 1200.0*s1_20 + 1200.0*qg1_20 - 1200.0*qp1_20 +
+	1000.0*p11_21 + 1500.0*p21_21 + 1200.0*qh1_21 + 1200.0*s1_21 + 1200.0*qg1_21 -
+	1200.0*qp1_21 + 1000.0*p11_22 + 1500.0*p21_22 + 1200.0*qh1_22 + 1200.0*s1_22 +
+	1200.0*qg1_22 - 1200.0*qp1_22 + 1000.0*p11_23 + 1500.0*p21_23 + 1200.0*qh1_23 +
+	1200.0*s1_23 + 1200.0*qg1_23 - 1200.0*qp1_23 + 1000.0*p11_24 + 1500.0*p21_24 +
 	1200.0*qh1_24 + 1200.0*s1_24 + 1200.0*qg1_24 - 1200.0*qp1_24;
 
 subject to cons_h1_1:
@@ -586,200 +586,3 @@ subject to cons_d1_23:
 	0 <= p11_23 + p21_23 + qh1_23 + qg1_23 - 1.33*qp1_23 - 545.0;
 subject to cons_d1_24:
 	0 <= p11_24 + p21_24 + qh1_24 + qg1_24 - 1.33*qp1_24 - 565.0;
-
-solve;
-	display v0_24;
-	display r0_24;
-	display p11_1;
-	display p21_1;
-	display qh1_1;
-	display s1_1;
-	display qg1_1;
-	display qp1_1;
-	display v1_1;
-	display r1_1;
-	display p11_2;
-	display p21_2;
-	display qh1_2;
-	display s1_2;
-	display qg1_2;
-	display qp1_2;
-	display v1_2;
-	display r1_2;
-	display p11_3;
-	display p21_3;
-	display qh1_3;
-	display s1_3;
-	display qg1_3;
-	display qp1_3;
-	display v1_3;
-	display r1_3;
-	display p11_4;
-	display p21_4;
-	display qh1_4;
-	display s1_4;
-	display qg1_4;
-	display qp1_4;
-	display v1_4;
-	display r1_4;
-	display p11_5;
-	display p21_5;
-	display qh1_5;
-	display s1_5;
-	display qg1_5;
-	display qp1_5;
-	display v1_5;
-	display r1_5;
-	display p11_6;
-	display p21_6;
-	display qh1_6;
-	display s1_6;
-	display qg1_6;
-	display qp1_6;
-	display v1_6;
-	display r1_6;
-	display p11_7;
-	display p21_7;
-	display qh1_7;
-	display s1_7;
-	display qg1_7;
-	display qp1_7;
-	display v1_7;
-	display r1_7;
-	display p11_8;
-	display p21_8;
-	display qh1_8;
-	display s1_8;
-	display qg1_8;
-	display qp1_8;
-	display v1_8;
-	display r1_8;
-	display p11_9;
-	display p21_9;
-	display qh1_9;
-	display s1_9;
-	display qg1_9;
-	display qp1_9;
-	display v1_9;
-	display r1_9;
-	display p11_10;
-	display p21_10;
-	display qh1_10;
-	display s1_10;
-	display qg1_10;
-	display qp1_10;
-	display v1_10;
-	display r1_10;
-	display p11_11;
-	display p21_11;
-	display qh1_11;
-	display s1_11;
-	display qg1_11;
-	display qp1_11;
-	display v1_11;
-	display r1_11;
-	display p11_12;
-	display p21_12;
-	display qh1_12;
-	display s1_12;
-	display qg1_12;
-	display qp1_12;
-	display v1_12;
-	display r1_12;
-	display p11_13;
-	display p21_13;
-	display qh1_13;
-	display s1_13;
-	display qg1_13;
-	display qp1_13;
-	display v1_13;
-	display r1_13;
-	display p11_14;
-	display p21_14;
-	display qh1_14;
-	display s1_14;
-	display qg1_14;
-	display qp1_14;
-	display v1_14;
-	display r1_14;
-	display p11_15;
-	display p21_15;
-	display qh1_15;
-	display s1_15;
-	display qg1_15;
-	display qp1_15;
-	display v1_15;
-	display r1_15;
-	display p11_16;
-	display p21_16;
-	display qh1_16;
-	display s1_16;
-	display qg1_16;
-	display qp1_16;
-	display v1_16;
-	display r1_16;
-	display p11_17;
-	display p21_17;
-	display qh1_17;
-	display s1_17;
-	display qg1_17;
-	display qp1_17;
-	display v1_17;
-	display r1_17;
-	display p11_18;
-	display p21_18;
-	display qh1_18;
-	display s1_18;
-	display qg1_18;
-	display qp1_18;
-	display v1_18;
-	display r1_18;
-	display p11_19;
-	display p21_19;
-	display qh1_19;
-	display s1_19;
-	display qg1_19;
-	display qp1_19;
-	display v1_19;
-	display r1_19;
-	display p11_20;
-	display p21_20;
-	display qh1_20;
-	display s1_20;
-	display qg1_20;
-	display qp1_20;
-	display v1_20;
-	display r1_20;
-	display p11_21;
-	display p21_21;
-	display qh1_21;
-	display s1_21;
-	display qg1_21;
-	display qp1_21;
-	display v1_21;
-	display r1_21;
-	display p11_22;
-	display p21_22;
-	display qh1_22;
-	display s1_22;
-	display qg1_22;
-	display qp1_22;
-	display v1_22;
-	display r1_22;
-	display p11_23;
-	display p21_23;
-	display qh1_23;
-	display s1_23;
-	display qg1_23;
-	display qp1_23;
-	display v1_23;
-	display r1_23;
-	display p11_24;
-	display p21_24;
-	display qh1_24;
-	display s1_24;
-	display qg1_24;
-	display qp1_24;
-	display v1_24;
-	display r1_24;
-display obj;

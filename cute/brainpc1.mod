@@ -7,9 +7,9 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
-#   Source: 
+#   Source:
 #   N. Dautrebande,
 #   private communication, 1994.
 
@@ -3552,7 +3552,3 @@ param oc_init:=
 25      4.349e-03
 26      4.394e-03
 ;
-
-solve;
-
-

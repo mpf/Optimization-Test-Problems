@@ -7,17 +7,17 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: problem 5 in
 #   P.T. Boggs and J.W. Tolle,
-#   "A strategy for global convergence in a sequential 
+#   "A strategy for global convergence in a sequential
 #    quadratic programming algorithm",
 #   SINUM 26(3), pp. 600-623, 1989.
 
 #   The problem as stated in the paper seems to contain a typo.
 #   The sign of the x3 squared term in the first constraint has been
-#   set to + instead of - in order to ensdure that the problem is 
+#   set to + instead of - in order to ensdure that the problem is
 #   bounded below and the optimal point stated recovered.
 
 #   The problem is not convex.
@@ -45,5 +45,3 @@ param x_init:=
 1	2.0
 2	2.0
 3	2.0;
-
-solve; display x; 

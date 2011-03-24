@@ -7,9 +7,9 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
-#   Source: 
+#   Source:
 #   Zhengua Lina and Yong Li,
 #   "A Modified Scaling Newton-Type Method for Nonlinear Programming"
 #   Department of Mathematics, Jilin University, Changchun, China, 1994.
@@ -30,5 +30,3 @@ subject to cons2:
 
 data;
 param xinit:= 1 0.1 2 0.1 3 3.0;
-
-solve; display f; display x;

@@ -7,7 +7,7 @@ param e {1..5};
 var x{1..5} >=0;
 
 minimize obj:
-   sum{i in 1..5} sum {j in 1..5} 
+   sum{i in 1..5} sum {j in 1..5}
    c[i,j]*x[i]*x[j]
    +
    sum{j in 1..5} (e[j]*x[j]+d[j]*x[j]^3);
@@ -24,7 +24,7 @@ data;
    1  4    1
    1  5    0
    2  1    0
-   2  2   -2 
+   2  2   -2
    2  3    0
    2  4    4
    2  5    2
@@ -55,7 +55,7 @@ data;
    7  5   -1
    8  1   -1
    8  2   -2
-   8  3   -3 
+   8  3   -3
    8  4   -2
    8  5   -1
    9  1    1
@@ -94,9 +94,9 @@ param c :=
    5  1  -10
    5  2   32
    5  3  -10
-   5  4  -20 
+   5  4  -20
    5  5   30
-   ; 
+   ;
 
 param e :=
    1  -15
@@ -106,12 +106,12 @@ param e :=
    5  -12
    ;
 
-param d := 
+param d :=
    1    4
    2    8
    3   10
    4    6
-   5    2 
+   5    2
    ;
 
 param b :=
@@ -138,14 +138,3 @@ let x[5] := 1;
 #let x[3] := 0.4;
 #let x[4] := 0.42831010;
 #let x[5] := 0.22396487;
-
-display obj;
-
-solve;
-
-display x;
-
-display obj;
-
-display obj+32.34867897;
-

@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   classification QLR2-AN-V-V
 
@@ -34,13 +34,11 @@ subject to v2{i in 2..nx-1}:
 	x[i,0] + (x[i,1] - x[i-1,1]) + y[i,1] - 1 = 0;
 subject to v3{i in 2..nx-1}:
         x[i,ny+1] + (x[i,ny] - x[i-1,ny]) - y[i,ny-1] - 1 = 0;
-subject to v4{j in 2..ny-1}:    
-	y[0,j] + (y[1,j] - y[1,j-1]) + x[1,j] - 1 = 0; 
-subject to v5{j in 2..ny-1}:            
+subject to v4{j in 2..ny-1}:
+	y[0,j] + (y[1,j] - y[1,j-1]) + x[1,j] - 1 = 0;
+subject to v5{j in 2..ny-1}:
         y[nx+1,j] + (y[nx,j] - y[nx,j-1]) - x[nx-1,j] - 1 = 0;
 subject to bound1{i in 1..nx-1}:
 	x[i,ny] >= 1.0;
 subject to bound2{j in 1..ny-1}:
 	y[nx,j] >= 1.0;
-
-solve;

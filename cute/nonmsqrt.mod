@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   Ph. Toint
@@ -27,8 +27,3 @@ var x{i in 1..P, j in 1..P} := if (i==3 && j==1) then -0.8*sin(((i-1)*P + j)^2 )
 minimize f:
 	sum {i in 1..P, j in 1..P} (sum {t in 1..P} x[i,t]*x[i,j]
 	-A[i,j])^2;
-
-option loqo_options "verbose=2 timing=1 iterlim=400 sigfig=5 inftol=0.00001";
-solve;
-display f;
-display x;

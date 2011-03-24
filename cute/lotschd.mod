@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   an exercize for L. Watson course on LANCELOT in the Spring 1993.
@@ -41,13 +41,13 @@ subject to cons7:
 	sum {i in 1..6} (t[i]+u[i]) - c[7] = 0;
 
 data;
-param:	x	a:=	
-1	1.502	1.8	
-2	1.126	3.2	
-3	0.815	6.1	
-4	1.268	3.2	
-5	1.502	1.8	
-6	0.740	7.4;	
+param:	x	a:=
+1	1.502	1.8
+2	1.126	3.2
+3	0.815	6.1
+4	1.268	3.2
+5	1.502	1.8
+6	0.740	7.4;
 param c:=
 1	11.0
 2	3.0
@@ -56,6 +56,3 @@ param c:=
 5	9.0
 6	20.0
 7	126.1;
-
-solve; display f; 
-display t,u;

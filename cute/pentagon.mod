@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   M.J.D. Powell,
@@ -35,16 +35,12 @@ subject to cons{i in 1..3, j in 0..4}:
 	c[j]*x[i] + s[j]*y[i] <= 1.0;
 
 data;
-var x:= 
+var x:=
 1 -1
 2 0
 3 1;
 
-var y := 
+var y :=
 1 0
 2 -1
 3 1;
-
-solve;
-display f;
-display x,y;

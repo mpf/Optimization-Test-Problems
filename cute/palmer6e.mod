@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   M.  Palmer, Edinburgh, private communication.
@@ -35,7 +35,7 @@ minimize palmer:
 (A0 + A2*X[m]^2 + A4*X[m]^4 + A6*X[m]^6 + A8*X[m]^8 + A10*X[m]^10 + L*exp(-K*X[m]^2)) )^2;
 
 data;
-param X:= 
+param X:=
 12                 0.000000
 13                 1.570796
 14                 1.396263
@@ -65,7 +65,3 @@ param Y:=
 23                  5.574556
 24                  9.026378
 ;
-
-solve;
-
-display A0,A2,A4,A6,A8,A10,K,L;

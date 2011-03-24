@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: problem P4 in
 #   W.W. Hager,
@@ -44,5 +44,3 @@ subject to cons1{i in 1..n}:
 	(n-1)*x[i] - n*x[i-1] - exp(t[i])*u[i] = 0;
 
 fix x[0] := xx0;
-solve; 
-

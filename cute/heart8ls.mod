@@ -4,7 +4,7 @@
 #**************************
 #   Problem :
 #   *********
-#   Dipole model of the heart (6 x 6 version). 
+#   Dipole model of the heart (6 x 6 version).
 #   This is the least squares version of problem HEART8.
 #   Source:
 #   J. E. Dennis, Jr., D. M. Gay, P. A. Vu,
@@ -67,28 +67,16 @@
 	var w := 1.0;
 
 minimize obj:
-	(a + b + 0.69)*(a + b + 0.69) + (c + d + 0.044)*(c + d + 0.044) + (t * a + u * 
-	b - v * c - w * d + 1.57)*(t * a + u * b - v * c - w * d + 1.57) + (v * a + w * 
-	b + t * c + u * d + 1.31)*(v * a + w * b + t * c + u * d + 1.31) + (a * 
-	(t^2-v^2) - 2.0*c * t * v + b * (u^2-w^2) - 2.0*d * u * w + 2.65)*(a * 
-	(t^2-v^2) - 2.0*c * t * v + b * (u^2-w^2) - 2.0*d * u * w + 2.65) + (c * 
-	(t^2-v^2) + 2.0*a * t * v + d * (u^2-w^2) + 2.0*b * u * w - 2.0)*(c * (t^2-v^2) 
-	+ 2.0*a * t * v + d * (u^2-w^2) + 2.0*b * u * w - 2.0) + (a * t * 
-	(t^2-(3.0)*v^2) + c * v * (v^2-(3.0)*t^2) + b * u * (u^2-(3.0)*w^2) + d * w * 
-	(w^2-(3.0)*u^2) + 12.6)*(a * t * (t^2-(3.0)*v^2) + c * v * (v^2-(3.0)*t^2) + b 
-	* u * (u^2-(3.0)*w^2) + d * w * (w^2-(3.0)*u^2) + 12.6) + (c * t * 
-	(t^2-(3.0)*v^2) - a * v * (v^2-(3.0)*t^2) + d * u * (u^2-(3.0)*w^2) - b * w * 
-	(w^2-(3.0)*u^2) - 9.48)*(c * t * (t^2-(3.0)*v^2) - a * v * (v^2-(3.0)*t^2) + d 
+	(a + b + 0.69)*(a + b + 0.69) + (c + d + 0.044)*(c + d + 0.044) + (t * a + u *
+	b - v * c - w * d + 1.57)*(t * a + u * b - v * c - w * d + 1.57) + (v * a + w *
+	b + t * c + u * d + 1.31)*(v * a + w * b + t * c + u * d + 1.31) + (a *
+	(t^2-v^2) - 2.0*c * t * v + b * (u^2-w^2) - 2.0*d * u * w + 2.65)*(a *
+	(t^2-v^2) - 2.0*c * t * v + b * (u^2-w^2) - 2.0*d * u * w + 2.65) + (c *
+	(t^2-v^2) + 2.0*a * t * v + d * (u^2-w^2) + 2.0*b * u * w - 2.0)*(c * (t^2-v^2)
+	+ 2.0*a * t * v + d * (u^2-w^2) + 2.0*b * u * w - 2.0) + (a * t *
+	(t^2-(3.0)*v^2) + c * v * (v^2-(3.0)*t^2) + b * u * (u^2-(3.0)*w^2) + d * w *
+	(w^2-(3.0)*u^2) + 12.6)*(a * t * (t^2-(3.0)*v^2) + c * v * (v^2-(3.0)*t^2) + b
+	* u * (u^2-(3.0)*w^2) + d * w * (w^2-(3.0)*u^2) + 12.6) + (c * t *
+	(t^2-(3.0)*v^2) - a * v * (v^2-(3.0)*t^2) + d * u * (u^2-(3.0)*w^2) - b * w *
+	(w^2-(3.0)*u^2) - 9.48)*(c * t * (t^2-(3.0)*v^2) - a * v * (v^2-(3.0)*t^2) + d
 	* u * (u^2-(3.0)*w^2) - b * w * (w^2-(3.0)*u^2) - 9.48);
-
-
-solve;
-	display a;
-	display b;
-	display c;
-	display d;
-	display t;
-	display u;
-	display v;
-	display w;
-display obj;

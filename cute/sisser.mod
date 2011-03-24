@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   F.S. Sisser,
@@ -29,5 +29,3 @@ minimize f:
 
 data;
 param xinit := 1 1.0 2 0.1;
-
-solve; display f; display x;

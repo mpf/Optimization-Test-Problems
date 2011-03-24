@@ -1,6 +1,6 @@
 var x {1..4};
 
-minimize obj: 
+minimize obj:
   -x[1]*x[2]*x[3]*x[4]
   ;
 
@@ -18,13 +18,3 @@ let x[4] := 0.8;
 #let x[2] := 0.707107;
 #let x[3] := 0.529732;
 #let x[4] := 0.840896;
-
-display obj;
-
-solve;
-
-display x;
-
-display obj;
-
-display obj + 0.25;

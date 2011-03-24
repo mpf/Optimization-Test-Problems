@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   classification QOR2-AN-V-V
 
@@ -25,5 +25,3 @@ subject to cons2{t in 1..n-1}:
 	y[t,2] - y[t+1,2] + 5*h*y[t,1] = 0;
 fix y[1,1] := 0.0;
 fix y[1,2] := 1.0;
-
-solve;

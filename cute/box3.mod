@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: Problem 12 in
 #   J.J. More', B.S. Garbow and K.E. Hillstrom,
@@ -31,7 +31,3 @@ minimize f:
 
 data;
 param x_init := 1 0 2 10 3 1.0;
-
-solve;
-display f;
-display x;

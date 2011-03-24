@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   B. Murtagh and M. Saunders,
@@ -48,5 +48,3 @@ subject to cons3:
 	grow*kk[t] - ii[t] <= 0;
 
 fix kk[1] := 3.05;
-solve;
-	

@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: problem 7 in
 #   J.J. More', B.S. Garbow and K.E. Hillstrom,
@@ -21,7 +21,7 @@
 
 param x_init{1..3};
 var x{i in 1..3} := x_init[i];
-var theta = if (x[1] > 0) then atan(x[2]/x[1])/(2*3.1415) else 
+var theta = if (x[1] > 0) then atan(x[2]/x[1])/(2*3.1415) else
 	    if (x[1] < 0) then atan(x[2]/x[1])/(2*3.1415) + 0.5 else 0.0;
 
 minimize f:
@@ -30,6 +30,6 @@ minimize f:
 data;
 param x_init := 1 -1 2 0 3 0;
 
-solve;
-display f;
+
+
 dispaly x;

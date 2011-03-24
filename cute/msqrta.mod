@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:  problem 201 (p. 93) in
 #   A.R. Buckley,
@@ -29,7 +29,3 @@ var x{i in 1..P, j in 1..P} := 0.2*B[i,j];
 minimize f: 0;
 subject to cons{i in 1..P, j in 1..P}:
 	 (sum {t in 1..P} x[i,t]*x[t,j] -A[i,j]) = 0;
-
-solve;
-display f;
-display x;

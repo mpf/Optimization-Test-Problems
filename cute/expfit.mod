@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   A.R. Conn, N. Gould and Ph.L. Toint,
@@ -19,13 +19,8 @@
 #   classification SUR2-AN-2-0
 
 param p:=10;
-param h:=0.25; 
+param h:=0.25;
 var alpha;
 var beta;
 minimize f:
 	sum {i in 1..p} (alpha*exp(i*h*beta)-i*h)^2;
-
-solve;
-display f;
-display alpha, beta;
-

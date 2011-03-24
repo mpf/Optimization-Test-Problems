@@ -1,0 +1,19 @@
+#!/bin/bash
+# Sanitize the problems. Use via the command
+#  ls *.mod | sanitize
+
+while read problem
+do
+    echo "sanitizing $problem"
+    # remove solve/display/options commands and trailing space/tab
+    sed \
+        -e 's/solve\;//g' \
+        -e 's/display[^;]*\;//g' \
+        -e 's/option[^;]*\;//g' \
+        -e 's/[ 	]*$//' \
+        ${problem} > ${problem}.new
+    # remove trailing new lines
+    sed \
+        -e :a -e '/^\n*$/{$d;N;ba' -e '}' \
+        ${problem}.new > ${problem}
+    rm -f ${problem}.new

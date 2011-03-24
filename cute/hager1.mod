@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: problem P1 in
 #   W.W. Hager,
@@ -28,5 +28,3 @@ subject to cons1{i in 1..N}:
 	(N-0.5)*x[i] + (-N-0.5)*x[i-1] - u[i] = 0;
 subject to cons2:
 	x[0] = 1.0;
-
-solve; display f; display x;

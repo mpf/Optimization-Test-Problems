@@ -3,7 +3,7 @@ param u {1..2};
 var x {j in 1..2} >= 0, <= u[j];
 
 
-minimize obj: 
+minimize obj:
   -75.196 + 3.8112*x[1] + 0.0020567*x[1]^3 - 1.0345e-5*x[1]^4
   + 6.8306*x[2] - 0.030234*x[1]*x[2] + 1.28134e-3*x[2]*x[1]^2
   + 2.266e-7*x[1]^4*x[2] - 0.25645*x[2]^2 + 0.0034604*x[2]^3 - 1.3514e-5*x[2]^4
@@ -31,13 +31,3 @@ let x[2] := 10;
 #printf "optimal solution as starting point \n";
 #let x[1] := 13.55010424;
 #let x[2] := 51.66018129;
-
-display obj;
-
-solve;
-
-display x;
-
-display obj;
-
-display obj + 7.804226324;

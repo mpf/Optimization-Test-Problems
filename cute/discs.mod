@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   W. Pulleyblank,
@@ -37,7 +37,7 @@ subject to cons5:
 	y[2] = 0;
 
 data;
-param a:= 
+param a:=
 2	1	1
 7	1	1
 3	2	1
@@ -56,7 +56,3 @@ param a:=
 11	10	1
 12	10	1
 12	11	1;
-
-solve;
-display f;
-display x,y,r;

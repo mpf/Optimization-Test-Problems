@@ -7,17 +7,17 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: problem 10 in
 #   P.T. Boggs and J.W. Tolle,
-#   "A strategy for global convergence in a sequential 
+#   "A strategy for global convergence in a sequential
 #    quadratic programming algorithm",
 #   SINUM 26(3), pp. 600-623, 1989.
 
 #   The problem as stated in the paper seems to contain a typo.
-#   In order to make the second constraint feasible at the proposed 
-#   solution, the sign of x2 in the second constraint has been set 
+#   In order to make the second constraint feasible at the proposed
+#   solution, the sign of x2 in the second constraint has been set
 #   to - instead of +.
 
 #   The problem is not convex.
@@ -33,7 +33,3 @@ subject to cons1:
 	x[2]-x[1]^3=0;
 subject to cons2:
 	-x[2]+x[1]^2=0;
-
-solve;
-display f;
-display x;

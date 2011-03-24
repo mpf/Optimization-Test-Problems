@@ -1,6 +1,6 @@
 var x {1..5};
 
-minimize obj: 
+minimize obj:
   (x[1]-x[2])^2 + (x[2]-x[3])^2 + (x[3]-x[4])^4 + (x[4]-x[5])^2
   ;
 
@@ -13,13 +13,3 @@ let x[2] := -31;
 let x[3] :=  11;
 let x[4] :=   5;
 let x[5] :=  -5;
-
-display obj;
-
-solve;
-
-display x;
-
-display obj;
-
-display obj - 0;

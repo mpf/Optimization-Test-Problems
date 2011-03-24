@@ -1,6 +1,6 @@
 var x {1..3} >= 0;
 
-minimize obj: 
+minimize obj:
   (x[1] - 1)*(x[1] - 2)*(x[1] - 3) + x[3]
   ;
 
@@ -16,13 +16,3 @@ let x[3] := 3;
 #let x[1] := 0;
 #let x[2] := sqrt(2);
 #let x[3] := sqrt(2);
-
-display obj;
-
-solve;
-
-display x;
-
-display obj;
-
-display obj - sqrt(2) + 6;

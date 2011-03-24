@@ -7,12 +7,12 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   K. Schittkowski
 #   "More Test Examples for Nonlinear Programming Codes"
-#   Springer Verlag, Berlin, Lecture notes in economics and 
+#   Springer Verlag, Berlin, Lecture notes in economics and
 #   mathematical systems, volume 282, 1987
 
 #   SIF input: Michel Bierlaire and Annick Sartenaer, October 1992.
@@ -52,5 +52,3 @@ param D:
 3	-1013	-1733	1755	1089	-174
 4	1948	-4914	1089	1515	-22
 5	329	-186	-174	-22	27;
-
-solve; display f; display x;

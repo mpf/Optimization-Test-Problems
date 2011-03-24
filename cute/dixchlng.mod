@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   L.C.W. Dixon, personnal communication, Jan 1991.
@@ -44,7 +44,3 @@ param x_init:=
 8	0.2
 9	-6
 10	-0.16667;
-
-solve;
-display f;
-display x;

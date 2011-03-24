@@ -1,6 +1,6 @@
 var x {1..3};
 
-minimize obj: 
+minimize obj:
   (x[1] + x[2])^2 + (x[2] + x[3])^2
   ;
 
@@ -14,15 +14,3 @@ let x[3] :=  1;
 #let x[1] :=  0.5;
 #let x[2] := -0.5;
 #let x[3] :=  0.5;
-
-display obj;
-
-option loqo_options $loqo_options" convex";
-
-solve;
-
-display x;
-
-display obj;
-
-display obj - 0;

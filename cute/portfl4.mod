@@ -7,9 +7,9 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
-#   Source: 
+#   Source:
 #   DATASTREAM   Period: 15.1.91 to 15.3.96 (62 observations),
 #   collected by D. Baudoux, July 1996.
 
@@ -854,7 +854,3 @@ param R:=
  61                 0.01664917
  62                 -0.0053113
 ;
-
-solve;
-display f;
-display s;

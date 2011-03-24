@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: Nick Gould
 
@@ -25,5 +25,3 @@ var z{i in N-K+1..N} = sum {j in i..N} x[j]*scale[j];
 
 minimize f:
 	sum {i in 1..N-K} (y[i]*(y[i]*(y[i]^2-20)-0.1)) + sum {i in N-K+1..N} (z[i]*(z[i]*(z[i]^2-20)-0.1));
-
-solve; display f; display x;

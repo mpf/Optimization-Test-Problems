@@ -5,15 +5,15 @@ param a {1..12};
 
 var x {j in 1..5} >= l[j], <= u[j];
 
-minimize obj: 
+minimize obj:
   5.3578547*x[3]^2 + 0.8356891*x[1]*x[5] + 37.293239*x[1] - 40792.141
   ;
 
-subject to constr1: 
+subject to constr1:
     0 <= a[1] + a[2]*x[2]*x[5] + a[3]*x[1]*x[4] - a[4]*x[3]*x[5] <= 92;
-subject to constr2: 
+subject to constr2:
     0 <= a[5] + a[6]*x[2]*x[5] + a[7]*x[1]*x[2] + a[8]*x[3]^2 - 90 <= 20;
-subject to constr3: 
+subject to constr3:
     0 <= a[9] + a[10]*x[3]*x[5] + a[11]*x[1]*x[3] + a[12]*x[3]*x[4] -20 <= 5;
 
 data;
@@ -61,11 +61,3 @@ let x[5] := 27;
 #let x[3] := 29.99526;
 #let x[4] := 45;
 #let x[5] := 36.77581;
-
-solve;
-
-display x;
-
-display obj;
-
-display obj + 30665.53867;

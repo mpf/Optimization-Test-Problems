@@ -1,7 +1,7 @@
 param u {1..6}, default Infinity;
 var x {j in 1..6} >= 0, <= u[j];
 
-minimize obj: 
+minimize obj:
   x[1] + 2*x[2] + 4*x[5] + exp(x[1]*x[4]);
   ;
 
@@ -35,13 +35,3 @@ let x[6] := 2;
 #let x[4] := 1;
 #let x[5] := 2/3;
 #let x[6] := 1/3;
-
-display obj;
-
-solve;
-
-display x;
-
-display obj;
-
-display obj - 19/3;

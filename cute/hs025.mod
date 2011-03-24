@@ -2,8 +2,8 @@ var x {1..3};
 
 param u {i in 1..99} := 25 + (-50*log(i/100))^(2/3);
 
-minimize obj: 
-  sum {i in 1..99} 
+minimize obj:
+  sum {i in 1..99}
   (
       -i/100 + exp(-(u[i] - x[2])^x[3]/x[1])
   )^2
@@ -21,13 +21,3 @@ let x[3] :=  3;
 #let x[1] := ?
 #let x[2] := ?
 #let x[3] := ?
-
-display obj;
-
-solve;
-
-display x;
-
-display obj;
-
-display obj - 0;

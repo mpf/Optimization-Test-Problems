@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   classification OLR2-RN-49-15
 
@@ -111,6 +111,3 @@ subject to cons24:
 subject to cons25:
 	MZ - IMPTRAIN + IMPNMOT + IMPPET + IMPPIL + IMPCAN + IMPSNA
 	+ 290=0;
-
-solve;
-display f;

@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   W. Li and J. Swetits,
@@ -27,12 +27,8 @@ param T{i in 1..N+K} := (i-1)/(N+K-1);
 var x{1..N+K} := 0.0;
 
 minimize f:
-	sum {i in 1..N+K} -(sqrt(T[i])+0.1*sin(i))*x[i] + 
+	sum {i in 1..N+K} -(sqrt(T[i])+0.1*sin(i))*x[i] +
 	sum {i in 1..N+K} 0.5*(sqrt(T[i])+0.1*sin(i))^2+
 	sum {i in 1..N+K} 0.5*x[i]^2;
 subject to cons1{j in 1..N}:
 	sum {i in 0..K} C[i]*x[j+K-i] >= 0;
-
-solve;
-display f;
-display x;

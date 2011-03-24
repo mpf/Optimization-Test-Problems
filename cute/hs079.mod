@@ -1,6 +1,6 @@
 var x {1..5};
 
-minimize obj: 
+minimize obj:
   (x[1]-1)^2 + (x[1]-x[2])^2 + (x[2]-x[3])^2 + (x[3]-x[4])^4 + (x[4]-x[5])^4
   ;
 
@@ -24,11 +24,3 @@ let x[5] := 2;
 #let x[5] := 1.679081;
 
 data;
-
-solve;
-
-display x;
-
-display obj;
-
-display obj - 0.0787768209;

@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: Hartman problem 6 in
 #   L. C. W. Dixon and G. P. Szego (Eds.)
@@ -25,7 +25,7 @@ param p {1..4, 1..6};
 
 var x{1..6} >= 0.0, <= 1.0, := 0.2;
 
-minimize obj: 
+minimize obj:
     - sum{i in 1..4} c[i]*exp(-sum{j in 1..6} a[i,j]*(x[j]-p[i,j])^2);
 
 data;
@@ -46,7 +46,3 @@ param p[tr]: 1 2 3 4 :=
  5 0.8283 0.1004 0.3047 0.1091
  6 0.5886 0.9991 0.665 0.0381
  ;
-
-solve;
-display x;
-display obj;

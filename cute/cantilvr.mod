@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   an example in a talk by W.K. Zhang and C. Fleury, LLN, 1994.
@@ -31,9 +31,3 @@ param num:=
 3	19.0
 4	7.0
 5	1.0;
-
-solve;
-display f;
-display x;
-
-

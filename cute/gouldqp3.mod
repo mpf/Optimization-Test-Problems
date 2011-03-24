@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: a variant on a problem of optimal knot placement in a
 #   scheme for ordinary differential equations with boundary values
@@ -35,6 +35,3 @@ subject to cons1{i in 1..K-1}:
 
 data;
 param K:=350;
-
-solve; display knot, space;
-

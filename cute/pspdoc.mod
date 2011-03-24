@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: problem 47 in
 #   Ph.L. Toint,
@@ -28,7 +28,3 @@ minimize f:
 	sum {i in 1..NGS} sqrt(x[i]^2+(x[i+1]-x[i+2])^2+1) ;
 subject to cons1:
 	x[1] <= -1;
-
-solve;
-display f;
-display x;

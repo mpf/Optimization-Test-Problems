@@ -3,7 +3,7 @@ param b {1..44};
 
 var x {1..2};
 
-minimize obj: 
+minimize obj:
   sum {i in 1..44} (b[i] - x[1] - (0.49 - x[1])*exp(-x[2]*(a[i]-8)))^2
   ;
 
@@ -67,16 +67,8 @@ param: a b :=
 ;
 
 /*
-display obj;
-display constr1.lb, constr1.body, constr1.ub;
-display constr2.lb, constr2.body, constr2.ub;
-display constr3.lb, constr3.body, constr3.ub;
+
+
+
+
 */
-
-solve;
-
-display x;
-
-display obj;
-
-display obj - 0.02845966972;

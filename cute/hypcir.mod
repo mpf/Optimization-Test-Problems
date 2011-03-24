@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:  problem 214 (p. 68) in
 #   A.R. Buckley,
@@ -30,7 +30,3 @@ subject to cons2:
 
 data;
 param xinit:= 1 0.0 2 1.0;
-
-solve;
-display f;
-display x;

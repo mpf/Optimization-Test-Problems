@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:  problem 28 in
 #   J.J. More', B.S. Garbow and K.E. Hillstrom,
@@ -32,7 +32,3 @@ minimize f:
 
 subject to cons1: x[0] = 0;
 subject to cons2: x[N+1] = 0;
-
-solve;
-display f;
-display x;

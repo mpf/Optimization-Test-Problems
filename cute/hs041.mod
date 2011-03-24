@@ -1,6 +1,6 @@
 var x {1..4} >= 0;
 
-minimize obj: 
+minimize obj:
   2-x[1]*x[2]*x[3]
   ;
 
@@ -20,13 +20,3 @@ let x[4] := 2;
 #let x[2] := 1/3;
 #let x[3] := 1/3;
 #let x[4] := 2;
-
-display obj;
-
-solve;
-
-display x;
-
-display obj;
-
-display obj - 52/27;

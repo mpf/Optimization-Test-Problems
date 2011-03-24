@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: p. 144 in
 #   J.C. Nash,
@@ -30,13 +30,13 @@ var B2 := 1;
 var B3 := 1, <= 3;
 
 var expt{i in M} = exp(-1 * (B2 + ( B3 *  Time[i])));
- 
+
 minimize L2_fit:
 	 sum{i in M} ((Y[i] - B1 / (1 + expt[i]) ) ^ 2);
 
 data;
-param m:=12;  
-param Y := 
+param m:=12;
+param Y :=
  1 5.308
  2 7.24
  3 9.638
@@ -50,7 +50,7 @@ param Y :=
  11 75.995
  12 91.972;
 
-param Time := 
+param Time :=
 1 1
 2 2
 3 3
@@ -63,5 +63,3 @@ param Time :=
 10 10
 11 11
 12 12;
-
-solve;

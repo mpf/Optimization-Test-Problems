@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   classification QBR2-AN-50-0
 
@@ -209,7 +209,7 @@ param:
 13	-4.5551D-05	9.9954D-02
 14	-9.9999D-02	.
 16	-7.2801D-02	.
-18	-9.9992D-02	8.3681D-06	
+18	-9.9992D-02	8.3681D-06
 20	-9.9956D-02	4.3809D-05
 22	-9.9961D-02	3.9248D-05
 25	-4.1110D-03	.
@@ -229,7 +229,3 @@ param:
 47	-3.0424D-06	9.9997D-02
 48	-9.9985D-02	1.5119D-05
 49	-1.0004D-01	2.4305D-02;
-
-solve;
-display f;
-display x;

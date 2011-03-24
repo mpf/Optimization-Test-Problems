@@ -7,9 +7,9 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
-#   Source: 
+#   Source:
 #   Ph. Toint, private communication, 1997.
 
 #   SDIF input: Ph. Toint, May 1997.
@@ -22,5 +22,3 @@ var y:=-506.2;
 
 minimize f:
 	0.05*(x^2+y^2) + (sin(zeta*x)*sin(zeta*y))^2;
-
-solve; display f; display x;

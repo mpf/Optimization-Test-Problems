@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: from problem 20 in
 #   D.H. Himmelblau,
@@ -27,11 +27,11 @@ var x{1..24}:=0.04, >= 0.0;
 minimize f:
 	0.0693*x[1]+0.0577*x[2]+0.05*x[3]+0.2*x[4]+0.26*x[5]+0.55*x[6] +
 0.06*x[7]+0.1*x[8]+0.12*x[9]+0.18*x[10]+0.1*x[11]+0.09*x[12]+0.0693*x[13]
-+0.0577*x[14]+0.05*x[15]+0.2*x[16]+0.26*x[17]+0.55*x[18]+0.06*x[19] 
++0.0577*x[14]+0.05*x[15]+0.2*x[16]+0.26*x[17]+0.55*x[18]+0.06*x[19]
 +0.1*x[20]+0.12*x[21]+0.18*x[22]+0.1*x[23]+0.09*x[24];
 
 subject to cons1{i in 1..12}:
-	sum {j in 1..12} x[i+12]*x[j]*40*B[i]/B[j] - 
+	sum {j in 1..12} x[i+12]*x[j]*40*B[i]/B[j] -
 	sum {j in 13..24} x[i]*x[j]*C[i]*B[i+12]/B[j] = 0 ;
 subject to cons2:
 	sum {i in 1..24} x[i]=1.0;
@@ -78,7 +78,3 @@ param:
 10	17.7	17.7
 11	0.85	0.85
 12	0.64	0.64;
-
-solve;
-display f;
-display x;

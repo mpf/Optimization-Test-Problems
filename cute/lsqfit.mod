@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   A.R. Conn, N. Gould and Ph.L. Toint,
@@ -43,7 +43,3 @@ param y:=
 3	0.625
 4	0.701
 5	1.0;
-
-solve;
-display f;
-display a, b;

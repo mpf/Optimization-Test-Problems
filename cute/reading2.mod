@@ -7,12 +7,12 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   S. Lyle and N.K. Nichols,
 #   "Numerical Methods for Optimal Control Problems with State Constraints",
-#   Numerical Analysis Report 8/91, Dept of Mathematics, 
+#   Numerical Analysis Report 8/91, Dept of Mathematics,
 #   University of Reading, UK.
 
 #   SIF input: Nick Gould, July 1991.
@@ -38,5 +38,3 @@ subject to cons3:
 	x1[0] = 0.0;
 subject to cons4:
 	x2[0] = 0.0;
-
-solve; display f; display x1, x2, u;

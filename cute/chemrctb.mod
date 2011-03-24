@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:  problem 8, eqs (8.10)--(8.11) in
 #   J.J. More',
@@ -41,7 +41,3 @@ subject to cons2{i in 2..n-1}:
 	(d*(b+1-t[i])*exp(gamma-gamma/t[i])+cti1*t[i-1]+cti*t[i]+t[i+1]/(h^2*pe)) = 0;
 subject to cons3:
 	(t[n]-t[n-1]) = 0;
-
-solve;
-display f;
-display t;

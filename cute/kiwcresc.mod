@@ -7,9 +7,9 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
-#   Source: 
+#   Source:
 #   K.C. Kiwiel,
 #   "Methods of Descent for Nondifferentiable Optimization"
 #   Lectures Notes in Mathematics 1133, Springer Verlag, 1985.
@@ -30,5 +30,3 @@ subject to cons2:
 
 data;
 param xinit:= 1 -1.5 2 2.0;
-
-solve; display f; display x;

@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   M. Gawande and J. Dunn,
@@ -40,6 +40,3 @@ fix x[1,0] := 0.0;
 fix x[2,0] := 0.0;
 fix v[1,0] := speed;
 fix v[2,0] := 0.0;
-solve;
-
-

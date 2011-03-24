@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:  adapted from:
 #   M. Gulliksson,
@@ -46,13 +46,8 @@ var x{i in 1..npts} := xd[i];
 var y{i in 1..npts} := yd[i];
 
 minimize f:
-	sum {i in 1..npts} (x[i]-xd[i])^2 
+	sum {i in 1..npts} (x[i]-xd[i])^2
 	+ sum {i in 1..npts} (y[i]-yd[i])^2;
 
 subject to cons1{i in 1..npts}:
 	h11*x[i]^2 + 2*h12*x[i]*y[i] + h22*y[i]^2 - 2*g1*x[i] - 2*g2*y[i] = 1.0;
-
-solve;
-display f;
-display h11,h12,h22,g1,g2;
-display x,y;

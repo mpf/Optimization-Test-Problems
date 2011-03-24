@@ -7,9 +7,9 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
-#   Source: 
+#   Source:
 #   K. Veselic,
 #   "De forma catenarum in campo gravitatis pendentium",
 #   Klasicna Gimnazija u Zagrebu, Zagreb, 1987.
@@ -44,7 +44,3 @@ fix x[0] := 0.0;
 fix y[0] := 0.0;
 fix z[0] := 0.0;
 fix x[N+1] := length;
-
-solve;
-display f;
-display x,y,z;

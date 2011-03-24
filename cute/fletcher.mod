@@ -7,9 +7,9 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
-#   Source: 
+#   Source:
 #   R. Fletcher
 #   "Practical Methods of Optimization",
 #   second edition, Wiley, 1987.
@@ -33,7 +33,3 @@ subject to cons4:
 	x[3]-x[4] >= 0;
 subject to cons5:
 	x[4] >= 1;
-
-solve;
-display f;
-display x;

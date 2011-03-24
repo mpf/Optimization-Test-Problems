@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: problem 25 in
 #   D.H. Himmelblau,
@@ -30,7 +30,3 @@ subject to cons2:
 
 data;
 param xinit:= 1 8.0 2 9.0;
-
-solve;
-display f;
-display x;

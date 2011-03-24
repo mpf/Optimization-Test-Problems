@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: problem 10 in
 #   J.J. More',
@@ -46,14 +46,10 @@ var u{i in 0..N+1} <= UUP, >= ULW, := if (i == 0) then LUA
 			else if (i==N+1) then LUB else 0.0;
 
 minimize f:
-	sum {i in 1..LN} (u[i-1]-2*u[i]+u[i+1]-LAMBDA*H^2*CA + 
+	sum {i in 1..LN} (u[i-1]-2*u[i]+u[i+1]-LAMBDA*H^2*CA +
 	LAMBDA*H^2*CA*exp(-LB*(u[i]-LUA)))^2 + sum {i in LN+1..N}
 	(u[i-1]-2*u[i]+u[i+1]+LAMBDA*H^2*CB -
 	LAMBDA*H^2*CB*exp(LB*(u[i]-LUB)))^2;
 
 fix u[0] := LUA;
 fix u[N+1] := LUB;
-
-solve;
-display f;
-display u;

@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: p. 123 of
 #   P.A. Steenbrink,
@@ -24,7 +24,7 @@
 #   classification ONR2-MY-468-108
 
 # changed model from original by starting cd[4] and cr[4] at 2000
-# otherwise, the sqrt function cannot be evaluated 
+# otherwise, the sqrt function cannot be evaluated
 
 param narcs := 18;
 param ntrips := 12;
@@ -51,7 +51,7 @@ var r{1..ntrips,1..narcs} >= 0.0, := 0.1;
 
 minimize f:
 	sum {i in 1..narcs} ((lt[i]*sum {j in 1..ntrips} d[j,i] + lc[i]/cd[i]^2*(sum {j in 1..ntrips} d[j,i])^3) +
-	(lt[i]*sum {j in 1..ntrips} r[j,i] + lc[i]/cr[i]^2*(sum {j in 1..ntrips} r[j,i])^3) + 
+	(lt[i]*sum {j in 1..ntrips} r[j,i] + lc[i]/cr[i]^2*(sum {j in 1..ntrips} r[j,i])^3) +
 	la[i]*sqrt(cd[i]-cmd[i]+nonz) + la[i]*sqrt(cr[i]-cmr[i]+nonz));
 subject to cons1{i in 1..ntrips}:
 	r[i,1]+r[i,2]+r[i,3]-d[i,1]-d[i,2]-d[i,3] = rhs[i,1];
@@ -121,5 +121,3 @@ param rhs :=
 12 5 -100
 12 4 100
 ;
-
-solve;

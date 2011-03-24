@@ -7,9 +7,9 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
-#   Source: 
+#   Source:
 #   J.Ch. Gilbert,
 #   "On the Realization of the Wolfe Conditions in Reduced Quasi-Newton
 #   Methods for Equality Constrained Optimization",
@@ -25,6 +25,3 @@ minimize f:
 	sum {i in 1..n} ((n+1-i)*x[i]/n-1.0)^2/2;
 subject to cons1:
 	(sum {i in 1..n} x[i]^2 - 1.0)/2 = 0.0;
-solve;
-display f;
-display x;

@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   A Griewank and Ph. Toint,
@@ -42,7 +42,3 @@ subject to cons3{i in 2..P-1}:
 	x[i,P] = (i-1)*ston+h01;
 subject to cons4{i in 2..P-1}:
 	x[i,1] = (i-1)*ston+h00;
-
-solve;
-display f;
-display x;

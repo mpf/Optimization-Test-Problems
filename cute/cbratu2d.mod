@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: problem 3 in
 #   J.J. More',
@@ -43,8 +43,3 @@ fix {i in 2..p-1} u[i,p] := 0.0;
 fix {i in 2..p-1} u[i,1] := 0.0;
 fix {i in 2..p-1} x[i,p] := 0.0;
 fix {i in 2..p-1} x[i,1] := 0.0;
-
-solve;
-display f;
-display u,x;
-	

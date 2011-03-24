@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:  Problem 19 in
 #   J.J. More', B.S. Garbow and K.E. Hillstrom,
@@ -65,17 +65,17 @@ param y:=
 16	0.606
 17	0.602
 18	0.626
-19	0.651	
+19	0.651
 20	0.724
 21	0.649
 22	0.649
 23	0.694
-24	0.644	
+24	0.644
 25	0.624
 26	0.661
 27	0.612
 28	0.558
-29	0.533	
+29	0.533
 30	0.495
 31	0.500
 32	0.423
@@ -93,7 +93,7 @@ param y:=
 44	0.653
 45	0.672
 46	0.708
-47	0.633	
+47	0.633
 48	0.668
 49	0.645
 50	0.632
@@ -112,7 +112,3 @@ param y:=
 63	0.162
 64	0.098
 65	0.054;
-
-solve;
-display f;
-display x;

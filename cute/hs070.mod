@@ -9,7 +9,7 @@ param y_obs {1..19};
 
 var x {j in 1..4} >= 0.00001, <= u[j];
 var b = x[3] + (1-x[3])*x[4];
-var y_cal {i in 1..19} = 
+var y_cal {i in 1..19} =
     (1 + 1/(12*x[2]))
     *
     (
@@ -24,7 +24,7 @@ var y_cal {i in 1..19} =
 	* exp(x[1] - b*c[i]*x[1]/(7.658*x[4]))
     );
 
-minimize obj: 
+minimize obj:
   sum {i in 1..19} (y_cal[i] - y_obs[i])^2
   ;
 
@@ -71,13 +71,3 @@ let x[4] := 2;
 #let x[2] := 4.631788;
 #let x[3] := 0.3128625;
 #let x[4] := 2.029290;
-
-display obj;
-
-solve;
-
-display x;
-
-display obj;
-
-display obj - 0.007498464;

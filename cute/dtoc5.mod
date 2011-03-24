@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   classification QQR2-AN-V-V
 
@@ -23,4 +23,3 @@ minimize f:
 subject to cons1{t in 1..n-1}:
 	h*y[t]^2 + y[t] - y[t+1] - h*x[t] = 0;
 fix y[1] := 1.0;
-solve;

@@ -4,7 +4,7 @@ param c {1..8}, default 0;
 
 var x {1..16} >= 0, <= 5;
 
-minimize obj: 
+minimize obj:
   sum {i in 1..16} sum {j in 1..16}
   a[i,j]*(x[i]^2 + x[i] + 1)*(x[j]^2 + x[j] + 1)
   ;
@@ -163,13 +163,3 @@ let x[16] := 10;
 #let x[14] := 0;
 #let x[15] := 0.6742559;
 #let x[16] := 0;
-
-display obj; 
-
-solve;
-
-display x;
-
-display obj;
-
-display obj - 244.899698;

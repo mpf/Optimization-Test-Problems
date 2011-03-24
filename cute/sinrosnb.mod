@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: a modification of an original idea by
 #   Ali Bouriacha, private communication.
@@ -30,7 +30,3 @@ subject to cons1{i in 2..N}:
 subject to cons2:
 	-pi <= x[1] <= pi;
 ;
-
-solve;
-display f;
-display x;

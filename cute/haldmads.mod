@@ -7,9 +7,9 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
-#   Source: 
+#   Source:
 #   J. Hald and K. Madsen,
 #   "Combined LP and quasi-Newton methods for minimax optimization",
 #   Mathematical Programming 20, pp. 49-62, 1981.
@@ -30,7 +30,3 @@ subject to cons1{i in 1..21}:
 	(x[1]+y[i]*x[2])/(1.0+x[3]*y[i]+x[4]*y[i]^2+x[5]*y[i]^3)-u <= ey[i];
 subject to cons2{i in 1..21}:
 	-(x[1]+y[i]*x[2])/(1.0+x[3]*y[i]+x[4]*y[i]^2+x[5]*y[i]^3)-u <= -ey[i];
-
-solve;
-display f;
-display x;

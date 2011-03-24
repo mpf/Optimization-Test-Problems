@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: Problem 9 in
 #   J.J. More',"A collection of nonlinear model problems"
@@ -45,7 +45,3 @@ subject to cons5:
 fix elevator := 0.1;
 fix aileron := 0.0;
 fix rudderdf := 0.0;
-
-solve;
-display f;
-display rollrate, pitchrat, yawrate, attckang, sslipang, elevator, aileron, rudderdf;

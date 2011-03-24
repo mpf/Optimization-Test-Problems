@@ -117,10 +117,10 @@ let {i in 1..N-1, j in 1..N-1} d2vdx2[i,j] := 1;
 
 # for sdp's expressed as x-u^2/y>=0, y>=0, it is important to give
 # y as a nonnegative variable and to use honor_bnds and honor_bnds_init
-#option loqo_options $loqo_options" honor_bnds=1 honor_bnds_init=1";
+#
 
 # note: setting bndpush small (0.001) speeds convergence
-solve;
+
 
 #printf {i in 0..N, j in 0..N}: 
 #    "%10.4f %10.4f %10.4f \n", a+i/N, a+j/N, v[i,j];

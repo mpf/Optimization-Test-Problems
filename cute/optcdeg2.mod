@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   B. Murtagh and M. Saunders,
@@ -42,6 +42,3 @@ subject to cons2{i in 0..t-1}:
 fix x[0] := 10.0;
 fix y[0] := 0.0;
 fix y[t] := 0.0;
-solve;
-display f;
-display x,y,u;

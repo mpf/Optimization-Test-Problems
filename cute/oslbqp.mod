@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: Simple convex QP in OSL manual
 
@@ -50,5 +50,3 @@ subject to cons7:
 	0 <= x[7];
 subject to cons8:
 	0 <= x[8] <= 4.3;
-
-solve; display f; display x;

@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   classification OOR2-MN-V-V
 
@@ -26,5 +26,3 @@ subject to cons1{i in 1..n}:
 subject to cons2:
 	(x[0] - x[n])*n = 0;
 fix x[0] := 0.25;
-solve;
-

@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   W. J. Korchinski, Profimatics, Inc,
@@ -22,8 +22,8 @@ param w{1..19};
 param m{1..19};
 
 var Feed := 1;
-var Effluent := 1; 
-var MF_ohd := 1; 
+var Effluent := 1;
+var MF_ohd := 1;
 var HCN := 1;
 var LCO := 1;
 var HCO := 1;
@@ -79,52 +79,52 @@ subject to cons7:
 subject to cons8:
 	C8spl_fd - LCN - MCN = 0;
 
-data; 
-param w:= 
-1 0.2 
-2 1 
-3 1 
-4 0.33333333 
+data;
+param w:=
+1 0.2
+2 1
+3 1
+4 0.33333333
 5 0.33333333
-6 0.33333333 
-7 1 
-8 1 
-9 1 
-10 1 
-11 1 
-12 1 
-13 1 
-14 1 
-15 0.33333333 
-16 0.33333333 
-17 1 
-18 0.33333333 
+6 0.33333333
+7 1
+8 1
+9 1
+10 1
+11 1
+12 1
+13 1
+14 1
+15 0.33333333
+16 0.33333333
+17 1
+18 0.33333333
 19 0.33333333;
 
-param m:= 
-1 31 
-2 36 
-3 20 
-4 3 
-5 5 
-6 3.5 
-7 4.2 
-8 0.9 
+param m:=
+1 31
+2 36
+3 20
+4 3
+5 5
+6 3.5
+7 4.2
+8 0.9
 9 3.9
-10 2.2 
-11 22.8 
-12 6.8 
-13 19 
-14 8.5 
-15 2.2 
-16 2.5 
-17 10.8 
-18 6.5 
+10 2.2
+11 22.8
+12 6.8
+13 19
+14 8.5
+15 2.2
+16 2.5
+17 10.8
+18 6.5
 19 6.5;
 
-solve;
-display f;
-display 
+
+
+display
     Feed,
     Effluent,
     MF_ohd,

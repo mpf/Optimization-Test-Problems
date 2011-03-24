@@ -7,9 +7,9 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
-#   Source:  
+#   Source:
 #   J.P. Rasson, Private communication, 1996.
 
 #   SIF input: Ph. Toint, Nov 1996.
@@ -30,7 +30,7 @@ var sg{i in 1..LGSG} := SSG[i], >= 0;
 var x{k in 1..LGTR, i in 1..LGSG} = if k-i+1 <= 0 then 0 else
 sg[i]*c[k-i+1];
 minimize f:
-	sum {k in 1..LGTR} (sum {i in 1..LGSG} x[k,i] 
+	sum {k in 1..LGTR} (sum {i in 1..LGSG} x[k,i]
 	-TR[k])^2;
 subject to cons1:
 	sum {i in 1..LGSG} sg[i]^2 -PIC = 0;
@@ -52,8 +52,3 @@ param SSG:=
 1 1.000000E-02 2 2.000000E-02 3 0.4000000000 4 0.6000000000 5
 0.8000000000 6 3.0000000000 7 0.8000000000 8 0.6000000000 9
 0.4400000000 10 1.000000E-02 11 1.000000E-02;
-
-solve;
-display f;
-display c,sg;
-

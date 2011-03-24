@@ -150,24 +150,24 @@
 	var y49 >= 0.0 ,  <= 0.0;
 
 minimize obj:
-	 - 0.5*(x1-x0) * (y1+y0) - 0.5*(x2-x1) * (y2+y1) - 0.5*(x3-x2) * (y3+y2) - 
-	0.5*(x4-x3) * (y4+y3) - 0.5*(x5-x4) * (y5+y4) - 0.5*(x6-x5) * (y6+y5) - 
-	0.5*(x7-x6) * (y7+y6) - 0.5*(x8-x7) * (y8+y7) - 0.5*(x9-x8) * (y9+y8) - 
-	0.5*(x10-x9) * (y10+y9) - 0.5*(x11-x10) * (y11+y10) - 0.5*(x12-x11) * (y12+y11) 
-	- 0.5*(x13-x12) * (y13+y12) - 0.5*(x14-x13) * (y14+y13) - 0.5*(x15-x14) * 
-	(y15+y14) - 0.5*(x16-x15) * (y16+y15) - 0.5*(x17-x16) * (y17+y16) - 
-	0.5*(x18-x17) * (y18+y17) - 0.5*(x19-x18) * (y19+y18) - 0.5*(x20-x19) * 
-	(y20+y19) - 0.5*(x21-x20) * (y21+y20) - 0.5*(x22-x21) * (y22+y21) - 
-	0.5*(x23-x22) * (y23+y22) - 0.5*(x24-x23) * (y24+y23) - 0.5*(x25-x24) * 
-	(y25+y24) - 0.5*(x26-x25) * (y26+y25) - 0.5*(x27-x26) * (y27+y26) - 
-	0.5*(x28-x27) * (y28+y27) - 0.5*(x29-x28) * (y29+y28) - 0.5*(x30-x29) * 
-	(y30+y29) - 0.5*(x31-x30) * (y31+y30) - 0.5*(x32-x31) * (y32+y31) - 
-	0.5*(x33-x32) * (y33+y32) - 0.5*(x34-x33) * (y34+y33) - 0.5*(x35-x34) * 
-	(y35+y34) - 0.5*(x36-x35) * (y36+y35) - 0.5*(x37-x36) * (y37+y36) - 
-	0.5*(x38-x37) * (y38+y37) - 0.5*(x39-x38) * (y39+y38) - 0.5*(x40-x39) * 
-	(y40+y39) - 0.5*(x41-x40) * (y41+y40) - 0.5*(x42-x41) * (y42+y41) - 
-	0.5*(x43-x42) * (y43+y42) - 0.5*(x44-x43) * (y44+y43) - 0.5*(x45-x44) * 
-	(y45+y44) - 0.5*(x46-x45) * (y46+y45) - 0.5*(x47-x46) * (y47+y46) - 
+	 - 0.5*(x1-x0) * (y1+y0) - 0.5*(x2-x1) * (y2+y1) - 0.5*(x3-x2) * (y3+y2) -
+	0.5*(x4-x3) * (y4+y3) - 0.5*(x5-x4) * (y5+y4) - 0.5*(x6-x5) * (y6+y5) -
+	0.5*(x7-x6) * (y7+y6) - 0.5*(x8-x7) * (y8+y7) - 0.5*(x9-x8) * (y9+y8) -
+	0.5*(x10-x9) * (y10+y9) - 0.5*(x11-x10) * (y11+y10) - 0.5*(x12-x11) * (y12+y11)
+	- 0.5*(x13-x12) * (y13+y12) - 0.5*(x14-x13) * (y14+y13) - 0.5*(x15-x14) *
+	(y15+y14) - 0.5*(x16-x15) * (y16+y15) - 0.5*(x17-x16) * (y17+y16) -
+	0.5*(x18-x17) * (y18+y17) - 0.5*(x19-x18) * (y19+y18) - 0.5*(x20-x19) *
+	(y20+y19) - 0.5*(x21-x20) * (y21+y20) - 0.5*(x22-x21) * (y22+y21) -
+	0.5*(x23-x22) * (y23+y22) - 0.5*(x24-x23) * (y24+y23) - 0.5*(x25-x24) *
+	(y25+y24) - 0.5*(x26-x25) * (y26+y25) - 0.5*(x27-x26) * (y27+y26) -
+	0.5*(x28-x27) * (y28+y27) - 0.5*(x29-x28) * (y29+y28) - 0.5*(x30-x29) *
+	(y30+y29) - 0.5*(x31-x30) * (y31+y30) - 0.5*(x32-x31) * (y32+y31) -
+	0.5*(x33-x32) * (y33+y32) - 0.5*(x34-x33) * (y34+y33) - 0.5*(x35-x34) *
+	(y35+y34) - 0.5*(x36-x35) * (y36+y35) - 0.5*(x37-x36) * (y37+y36) -
+	0.5*(x38-x37) * (y38+y37) - 0.5*(x39-x38) * (y39+y38) - 0.5*(x40-x39) *
+	(y40+y39) - 0.5*(x41-x40) * (y41+y40) - 0.5*(x42-x41) * (y42+y41) -
+	0.5*(x43-x42) * (y43+y42) - 0.5*(x44-x43) * (y44+y43) - 0.5*(x45-x44) *
+	(y45+y44) - 0.5*(x46-x45) * (y46+y45) - 0.5*(x47-x46) * (y47+y46) -
 	0.5*(x48-x47) * (y48+y47) - 0.5*(x49-x48) * (y49+y48);
 
 subject to ox1:
@@ -2716,106 +2716,3 @@ subject to d49_47:
 	0 >= (x49-x47) * (x49-x47) + (y49-y47) * (y49-y47) - 1.0;
 subject to d49_48:
 	0 >= (x49-x48) * (x49-x48) + (y49-y48) * (y49-y48) - 1.0;
-
-solve;
-	display x0;
-	display y0;
-	display x1;
-	display y1;
-	display x2;
-	display y2;
-	display x3;
-	display y3;
-	display x4;
-	display y4;
-	display x5;
-	display y5;
-	display x6;
-	display y6;
-	display x7;
-	display y7;
-	display x8;
-	display y8;
-	display x9;
-	display y9;
-	display x10;
-	display y10;
-	display x11;
-	display y11;
-	display x12;
-	display y12;
-	display x13;
-	display y13;
-	display x14;
-	display y14;
-	display x15;
-	display y15;
-	display x16;
-	display y16;
-	display x17;
-	display y17;
-	display x18;
-	display y18;
-	display x19;
-	display y19;
-	display x20;
-	display y20;
-	display x21;
-	display y21;
-	display x22;
-	display y22;
-	display x23;
-	display y23;
-	display x24;
-	display y24;
-	display x25;
-	display y25;
-	display x26;
-	display y26;
-	display x27;
-	display y27;
-	display x28;
-	display y28;
-	display x29;
-	display y29;
-	display x30;
-	display y30;
-	display x31;
-	display y31;
-	display x32;
-	display y32;
-	display x33;
-	display y33;
-	display x34;
-	display y34;
-	display x35;
-	display y35;
-	display x36;
-	display y36;
-	display x37;
-	display y37;
-	display x38;
-	display y38;
-	display x39;
-	display y39;
-	display x40;
-	display y40;
-	display x41;
-	display y41;
-	display x42;
-	display y42;
-	display x43;
-	display y43;
-	display x44;
-	display y44;
-	display x45;
-	display y45;
-	display x46;
-	display y46;
-	display x47;
-	display y47;
-	display x48;
-	display y48;
-	display x49;
-	display y49;
-display obj;

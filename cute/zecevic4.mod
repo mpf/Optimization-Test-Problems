@@ -7,11 +7,11 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
-#   Source:  problem 4 in A. Zecevic, "Contribution to methods 
+#   Source:  problem 4 in A. Zecevic, "Contribution to methods
 #            of external penalty functions - algorithm MNBS"
-#            Advanced Business School, Belgrade, 
+#            Advanced Business School, Belgrade,
 #            (whatever is left of) Yugoslavia.
 
 #   SIF input: Nick Gould, April 1993.
@@ -34,4 +34,3 @@ subject to cons4:
 
 data;
 param xinit := 1 0.1 2 -0.1;
-solve; display f; display x;

@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: a modification (Ph. Toint) of problem 365 in
 #   K. Schittkowski,
@@ -63,7 +63,3 @@ var x:=
 5	1.5
 6	5
 7	0;
-
-solve;
-display f;
-display x;

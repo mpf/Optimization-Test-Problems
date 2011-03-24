@@ -4,7 +4,7 @@ param u {1..4};
 
 var x {j in 1..4} >= l[j], <= u[j];
 
-minimize obj: 
+minimize obj:
   3*x[1] + 1.0e-6*x[1]^3 + 2*x[2] + 2.0e-6*x[2]^3/3
   ;
 
@@ -48,11 +48,3 @@ let x[4] := 0;
 #let x[4] := -0.4288911;
 
 data;
-
-solve;
-
-display x;
-
-display obj;
-
-display obj - 5174.4129;

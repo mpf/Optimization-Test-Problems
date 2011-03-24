@@ -7,12 +7,12 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:  problem 8 in
 #   A.R.Conn,N.I.M.Gould and Ph.L.Toint,
-#   "Testing a class of methods for solving minimization 
-#   problems with simple bounds on their variables, 
+#   "Testing a class of methods for solving minimization
+#   problems with simple bounds on their variables,
 #   Mathematics of Computation 50, pp 399-430, 1988.
 
 #   SIF input: Nick Gould and Ph. Toint, Dec 1995.
@@ -39,7 +39,3 @@ let x[1] := -3.0;
 let x[2] := -1.0;
 let x[3] := -3.0;
 let x[4] := -1.0;
-
-solve;
-display f;
-display x;

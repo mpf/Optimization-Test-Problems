@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   classification  QOR2-AY-6-2
 
@@ -24,7 +24,3 @@ subject to cons1:
 	x11*x22-x12^2 >= 0;
 subject to cons2:
 	y11*y22-y12^2<= 0;
-
-solve;
-display f;
-display x11,x12,x22,y11,y12,y22;

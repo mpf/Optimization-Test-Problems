@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: Problem 5 in
 #   J.J. More', B.S. Garbow and K.E. Hillstrom,
@@ -24,7 +24,3 @@ var x{1..N} := 1.0;
 
 minimize f:
 	(-1.5+x[1]*(1.0-x[2]))^2 + (-2.25+x[1]*(1.0-x[2]^2))^2 + (-2.625+x[1]*(1.0-x[2]^3))^2;
-
-solve;
-display f;
-display x;

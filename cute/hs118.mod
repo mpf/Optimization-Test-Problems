@@ -3,19 +3,19 @@ param u{1..15};
 
 var x {j in 1..15} >= l[j], <= u[j];
 
-minimize obj: 
+minimize obj:
   sum {k in 0..4}
   (2.3*x[3*k+1] + 0.0001*x[3*k+1]^2 + 1.7*x[3*k+2] + 0.0001*x[3*k+2]^2 +
    2.2*x[3*k+3] + 0.00015*x[3*k+3]^2)
   ;
 
-subject to constr1 {j in 1..4}: 
+subject to constr1 {j in 1..4}:
    0 <= x[3*j+1] - x[3*j-2] + 7 <= 13;
 
-subject to constr2 {j in 1..4}: 
+subject to constr2 {j in 1..4}:
    0 <= x[3*j+2] - x[3*j-1] + 7 <= 14;
 
-subject to constr3 {j in 1..4}: 
+subject to constr3 {j in 1..4}:
    0 <= x[3*j+3] - x[3*j] + 7 <= 13;
 
 subject to constr4: x[1] + x[2] + x[3] >= 60;
@@ -70,15 +70,3 @@ let x[15] := 20;
 #let x[13] := 5;
 #let x[14] := 77;
 #let x[15] := 18;
-
-display obj; 
-
-option loqo_options $loqo_options" convex";
-
-solve;
-
-display x;
-
-display obj;
-
-display obj - 664.8204500;

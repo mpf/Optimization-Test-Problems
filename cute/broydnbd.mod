@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: problem 31 in
 #   J.J. More', B.S. Garbow and K.E. Hillstrom,
@@ -31,7 +31,3 @@ var x{1..N} := -1;
 minimize f: 0;
 subject to cons{i in 1..N}:
 	( x[i]*(2+5*x[i]^2) + 1 - sum {j in J[i]} x[j]*(1+x[j]) ) = 0;
-
-solve;
-display f;
-display x;

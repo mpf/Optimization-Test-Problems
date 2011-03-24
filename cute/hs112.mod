@@ -2,22 +2,22 @@ var x {1..10} >= 1.0e-6;
 
 param c {1..10};
 
-minimize obj: 
-  sum {j in 1..10} x[j]*(c[j] 
+minimize obj:
+  sum {j in 1..10} x[j]*(c[j]
     + log(x[j]/sum {k in 1..10} x[k]) );
 
-subject to cons1: 
+subject to cons1:
   x[1] + 2*x[2] + 2*x[3] + x[6] + x[10] = 2;
 
-subject to cons2: 
+subject to cons2:
   x[4] + 2*x[5] + x[6] + x[7] = 1;
 
-subject to cons3: 
+subject to cons3:
   x[3] + x[7] + x[8] + 2*x[9] + x[10] = 1;
 
 data;
 
-param c := 
+param c :=
   1  -6.089
   2 -17.164
   3 -34.054
@@ -31,11 +31,3 @@ param c :=
  ;
 
 let {j in 1..10} x[j] := 0.1;
-
-solve;
-
-display x;
-
-display obj;
-
-display obj + 47.76109026;

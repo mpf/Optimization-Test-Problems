@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: a modification (by Ph. Toint) of
 #   L.C.W. Dixon, personnal communication, Jan 1991.
@@ -25,5 +25,3 @@ minimize f:
 
 subject to cons1{i in 2..n by 2}:
 	sum {j in 1..i} log(x[j]) = 0;
-
-solve;

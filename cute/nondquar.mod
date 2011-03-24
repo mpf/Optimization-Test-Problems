@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: problem 57 in
 #   A.R. Conn, N.I.M. Gould, M. Lescrenier and Ph.L. Toint,
@@ -24,5 +24,3 @@ var x{i in 1..N} := if (i mod 2 = 0) then -1 else 1;
 
 minimize f:
 	sum {i in 1..N-2} (x[i]+x[i+1]+x[N])^4 + (x[1]-x[2])^2 + (x[N-1]+x[N])^2;
-
-solve; display f; display x; 

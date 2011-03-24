@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: problem MAXTPH in
 #   Vasko and Stott
@@ -43,7 +43,3 @@ subject to cons3:
 	wid/thick <= maxaspr;
 subject to cons4:
 	0.0 <= thick*wid - minarea <= maxarea-minarea;
-
-solve;
-display f;
-display thick, wid, len, tph, ipm;

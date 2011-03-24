@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   Hans Mittelmann, private communication.
@@ -25,7 +25,3 @@ subject to cons1{i in 1..n-1}:
 	x[i]+x[i+1] >= 0.0;
 subject to cons2{i in 1..n-1}:
 	exp(x[i])+exp(x[i+1]) <= 20.0;
-
-solve;
-display f;
-display x;

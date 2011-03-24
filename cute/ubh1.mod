@@ -7,9 +7,9 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
-#   Source: unscaled problem 1 
+#   Source: unscaled problem 1
 #   (ODE = 1, CLS = 1, GRD = 1, MET = T, SEED = 0.) in
 #   J.T. Betts and W.P. Huffman,
 #   "Sparse Nonlinear Programming Test Problems (Release 1.0)",
@@ -42,5 +42,3 @@ fix y[4,0] := -10.0;
 fix y[5,0] := 10.0;
 fix y[6,0] := -10.0;
 fix {i in 1..6} y[i,n] := 0.0;
-
-solve;

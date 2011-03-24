@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: a generalization of problem 20 in
 #   M. J. D. Powell
@@ -27,4 +27,3 @@ subject to cons1{k in 1..N-1}:
 	x[k+1]-x[k] >= -0.5+(-1)^k*k;
 subject to cons2:
 	x[1]-x[N] >= N-0.5;
-solve;

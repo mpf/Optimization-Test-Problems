@@ -136,21 +136,11 @@ let x[3] := 115;
 let x[4] := 267;
 let x[5] := 27;
 
-#display "starting with optimal";
+#
 #let x[1] := 705.1803;
 #let x[2] :=  68.60005;
 #let x[3] := 102.90001;
 #let x[4] := 282.324999;
 #let x[5] := 37.5850413;
 
-#display obj;
-
-solve;
-
-display x;
-
-display obj;
-
-display obj+1.90513375;
-
-
+#

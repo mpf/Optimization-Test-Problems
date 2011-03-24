@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   "The OPTIMA user manual (issue No.8, p. 47)",
@@ -26,5 +26,3 @@ subject to cons2:
 	(x[1]-0.056+x[2]*exp(2*x[3])) = 0;
 subject to cons3:
 	(x[1]-0.099+x[2]*exp(3*x[3])) = 0;
-
-solve; display f; display x;

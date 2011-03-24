@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   P. T. Harker and J.-S. Pang,
@@ -26,5 +26,3 @@ minimize f:
 	sum {i in 1..N} -x[i] +
 	( sum {i in 1..N} x[i] )^2 +
 	sum {j in 2..N} 2*(sum {i in j..N} x[i])^2;
-
-solve;

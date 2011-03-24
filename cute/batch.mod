@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: Optimal Design of Multiproduct Batch Plant
 #   G.R. Kocis & I.E. Grossmann,
@@ -58,10 +58,10 @@ subject to cons4{j in 1..M}:
 	sum {k in 1..NU} log(k)*y[k,j] - n[j] = 0;
 subject to cons5{j in 1..M}:
 	sum {k in 1..NU} y[k,j] = 1.0;
-	
+
 data;
-param: 
-	TLO 		TUP 	BLO 	BUP 	Q:= 
+param:
+	TLO 		TUP 	BLO 	BUP 	Q:=
 1	0.729961	2.11626	4.45966	397.747	250000.0
 2	0.530628	1.91626	3.74950	882.353	150000.0
 3	1.09024		2.47654	4.49144	833.333	180000.0
@@ -86,7 +86,3 @@ param tvals:
 4	3.2	3.0	3.5	3.3	2.8	3.4
 5	2.1	2.5	4.2	3.6	3.7	2.2
 ;
-
-solve;
-display f;
-display n, v, b, tl, y;

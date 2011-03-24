@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   A. Lewis, private communication.
@@ -44,7 +44,3 @@ param a_init:=
 3	0
 4	1
 5	-1;
-
-solve;
-display f;
-display a;

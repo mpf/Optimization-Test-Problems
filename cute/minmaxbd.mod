@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: Problem 16 in
 #   J.J. More', B.S. Garbow and K.E. Hillstrom,
@@ -35,7 +35,3 @@ subject to cons1{i in 1..M}:
 
 data;
 param x_init:= 1 25 2 5 3 -5 4 -1;
-
-solve;
-display f;
-display x;

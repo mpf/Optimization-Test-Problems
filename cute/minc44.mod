@@ -761,7 +761,7 @@ subject to pe61:
 subject to pe62:
 	a5_3 * p30 + a5_4 * p46 + a5_5 * p54 + a5_6 * p58 + a5_7 * p60 - p62 = 0;
 subject to pe63:
-	a6_3 * p31 + a6_4 * p47 + a6_5 * p55 + a6_6 * p59 + a6_7 * p61 + a6_8 * p62 - 
+	a6_3 * p31 + a6_4 * p47 + a6_5 * p55 + a6_6 * p59 + a6_7 * p61 + a6_8 * p62 -
 	p63 = 0;
 subject to pe65:
 	a2_2 * a1_8 + a2_8 * a1_2 - p65 = 0;
@@ -824,7 +824,7 @@ subject to pe93:
 subject to pe94:
 	a5_2 * p30 + a5_4 * p78 + a5_5 * p86 + a5_6 * p90 + a5_7 * p92 - p94 = 0;
 subject to pe95:
-	a6_2 * p31 + a6_4 * p79 + a6_5 * p87 + a6_6 * p91 + a6_7 * p93 + a6_8 * p94 - 
+	a6_2 * p31 + a6_4 * p79 + a6_5 * p87 + a6_6 * p91 + a6_7 * p93 + a6_8 * p94 -
 	p95 = 0;
 subject to pe96:
 	a2_2 * a1_3 + a2_3 * a1_2 - p96 = 0;
@@ -857,7 +857,7 @@ subject to pe109:
 subject to pe110:
 	a5_2 * p46 + a5_3 * p78 + a5_5 * p102 + a5_6 * p106 + a5_7 * p108 - p110 = 0;
 subject to pe111:
-	a6_2 * p47 + a6_3 * p79 + a6_5 * p103 + a6_6 * p107 + a6_7 * p109 + a6_8 * p110 
+	a6_2 * p47 + a6_3 * p79 + a6_5 * p103 + a6_6 * p107 + a6_7 * p109 + a6_8 * p110
 	- p111 = 0;
 subject to pe112:
 	a3_2 * p48 + a3_3 * p80 + a3_4 * p96 - p112 = 0;
@@ -874,7 +874,7 @@ subject to pe117:
 subject to pe118:
 	a5_2 * p54 + a5_3 * p86 + a5_4 * p102 + a5_6 * p114 + a5_7 * p116 - p118 = 0;
 subject to pe119:
-	a6_2 * p55 + a6_3 * p87 + a6_4 * p103 + a6_6 * p115 + a6_7 * p117 + a6_8 * p118 
+	a6_2 * p55 + a6_3 * p87 + a6_4 * p103 + a6_6 * p115 + a6_7 * p117 + a6_8 * p118
 	- p119 = 0;
 subject to pe120:
 	a4_2 * p56 + a4_3 * p88 + a4_4 * p104 + a4_5 * p112 - p120 = 0;
@@ -883,18 +883,18 @@ subject to pe121:
 subject to pe122:
 	a5_2 * p58 + a5_3 * p90 + a5_4 * p106 + a5_5 * p114 + a5_7 * p120 - p122 = 0;
 subject to pe123:
-	a6_2 * p59 + a6_3 * p91 + a6_4 * p107 + a6_5 * p115 + a6_7 * p121 + a6_8 * p122 
+	a6_2 * p59 + a6_3 * p91 + a6_4 * p107 + a6_5 * p115 + a6_7 * p121 + a6_8 * p122
 	- p123 = 0;
 subject to pe124:
 	a5_2 * p60 + a5_3 * p92 + a5_4 * p108 + a5_5 * p116 + a5_6 * p120 - p124 = 0;
 subject to pe125:
-	a6_2 * p61 + a6_3 * p93 + a6_4 * p109 + a6_5 * p117 + a6_6 * p121 + a6_8 * p124 
+	a6_2 * p61 + a6_3 * p93 + a6_4 * p109 + a6_5 * p117 + a6_6 * p121 + a6_8 * p124
 	- p125 = 0;
 subject to pe126:
-	a6_2 * p62 + a6_3 * p94 + a6_4 * p110 + a6_5 * p118 + a6_6 * p122 + a6_7 * p124 
+	a6_2 * p62 + a6_3 * p94 + a6_4 * p110 + a6_5 * p118 + a6_6 * p122 + a6_7 * p124
 	- p126 = 0;
 subject to pe127:
-	a7_2 * p63 + a7_3 * p95 + a7_4 * p111 + a7_5 * p119 + a7_6 * p123 + a7_7 * p125 
+	a7_2 * p63 + a7_3 * p95 + a7_4 * p111 + a7_5 * p119 + a7_6 * p123 + a7_7 * p125
 	+ a7_8 * p126 - p127 = 0;
 subject to pe129:
 	a2_1 * a1_8 + a2_8 * a1_1 - p129 = 0;
@@ -957,7 +957,7 @@ subject to pe157:
 subject to pe158:
 	a5_1 * p30 + a5_4 * p142 + a5_5 * p150 + a5_6 * p154 + a5_7 * p156 - p158 = 0;
 subject to pe159:
-	a6_1 * p31 + a6_4 * p143 + a6_5 * p151 + a6_6 * p155 + a6_7 * p157 + a6_8 * 
+	a6_1 * p31 + a6_4 * p143 + a6_5 * p151 + a6_6 * p155 + a6_7 * p157 + a6_8 *
 	p158 - p159 = 0;
 subject to pe160:
 	a2_1 * a1_3 + a2_3 * a1_1 - p160 = 0;
@@ -990,7 +990,7 @@ subject to pe173:
 subject to pe174:
 	a5_1 * p46 + a5_3 * p142 + a5_5 * p166 + a5_6 * p170 + a5_7 * p172 - p174 = 0;
 subject to pe175:
-	a6_1 * p47 + a6_3 * p143 + a6_5 * p167 + a6_6 * p171 + a6_7 * p173 + a6_8 * 
+	a6_1 * p47 + a6_3 * p143 + a6_5 * p167 + a6_6 * p171 + a6_7 * p173 + a6_8 *
 	p174 - p175 = 0;
 subject to pe176:
 	a3_1 * p48 + a3_3 * p144 + a3_4 * p160 - p176 = 0;
@@ -1007,7 +1007,7 @@ subject to pe181:
 subject to pe182:
 	a5_1 * p54 + a5_3 * p150 + a5_4 * p166 + a5_6 * p178 + a5_7 * p180 - p182 = 0;
 subject to pe183:
-	a6_1 * p55 + a6_3 * p151 + a6_4 * p167 + a6_6 * p179 + a6_7 * p181 + a6_8 * 
+	a6_1 * p55 + a6_3 * p151 + a6_4 * p167 + a6_6 * p179 + a6_7 * p181 + a6_8 *
 	p182 - p183 = 0;
 subject to pe184:
 	a4_1 * p56 + a4_3 * p152 + a4_4 * p168 + a4_5 * p176 - p184 = 0;
@@ -1016,18 +1016,18 @@ subject to pe185:
 subject to pe186:
 	a5_1 * p58 + a5_3 * p154 + a5_4 * p170 + a5_5 * p178 + a5_7 * p184 - p186 = 0;
 subject to pe187:
-	a6_1 * p59 + a6_3 * p155 + a6_4 * p171 + a6_5 * p179 + a6_7 * p185 + a6_8 * 
+	a6_1 * p59 + a6_3 * p155 + a6_4 * p171 + a6_5 * p179 + a6_7 * p185 + a6_8 *
 	p186 - p187 = 0;
 subject to pe188:
 	a5_1 * p60 + a5_3 * p156 + a5_4 * p172 + a5_5 * p180 + a5_6 * p184 - p188 = 0;
 subject to pe189:
-	a6_1 * p61 + a6_3 * p157 + a6_4 * p173 + a6_5 * p181 + a6_6 * p185 + a6_8 * 
+	a6_1 * p61 + a6_3 * p157 + a6_4 * p173 + a6_5 * p181 + a6_6 * p185 + a6_8 *
 	p188 - p189 = 0;
 subject to pe190:
-	a6_1 * p62 + a6_3 * p158 + a6_4 * p174 + a6_5 * p182 + a6_6 * p186 + a6_7 * 
+	a6_1 * p62 + a6_3 * p158 + a6_4 * p174 + a6_5 * p182 + a6_6 * p186 + a6_7 *
 	p188 - p190 = 0;
 subject to pe191:
-	a7_1 * p63 + a7_3 * p159 + a7_4 * p175 + a7_5 * p183 + a7_6 * p187 + a7_7 * 
+	a7_1 * p63 + a7_3 * p159 + a7_4 * p175 + a7_5 * p183 + a7_6 * p187 + a7_7 *
 	p189 + a7_8 * p190 - p191 = 0;
 subject to pe192:
 	a2_1 * a1_2 + a2_2 * a1_1 - p192 = 0;
@@ -1060,7 +1060,7 @@ subject to pe205:
 subject to pe206:
 	a5_1 * p78 + a5_2 * p142 + a5_5 * p198 + a5_6 * p202 + a5_7 * p204 - p206 = 0;
 subject to pe207:
-	a6_1 * p79 + a6_2 * p143 + a6_5 * p199 + a6_6 * p203 + a6_7 * p205 + a6_8 * 
+	a6_1 * p79 + a6_2 * p143 + a6_5 * p199 + a6_6 * p203 + a6_7 * p205 + a6_8 *
 	p206 - p207 = 0;
 subject to pe208:
 	a3_1 * p80 + a3_2 * p144 + a3_4 * p192 - p208 = 0;
@@ -1077,7 +1077,7 @@ subject to pe213:
 subject to pe214:
 	a5_1 * p86 + a5_2 * p150 + a5_4 * p198 + a5_6 * p210 + a5_7 * p212 - p214 = 0;
 subject to pe215:
-	a6_1 * p87 + a6_2 * p151 + a6_4 * p199 + a6_6 * p211 + a6_7 * p213 + a6_8 * 
+	a6_1 * p87 + a6_2 * p151 + a6_4 * p199 + a6_6 * p211 + a6_7 * p213 + a6_8 *
 	p214 - p215 = 0;
 subject to pe216:
 	a4_1 * p88 + a4_2 * p152 + a4_4 * p200 + a4_5 * p208 - p216 = 0;
@@ -1086,18 +1086,18 @@ subject to pe217:
 subject to pe218:
 	a5_1 * p90 + a5_2 * p154 + a5_4 * p202 + a5_5 * p210 + a5_7 * p216 - p218 = 0;
 subject to pe219:
-	a6_1 * p91 + a6_2 * p155 + a6_4 * p203 + a6_5 * p211 + a6_7 * p217 + a6_8 * 
+	a6_1 * p91 + a6_2 * p155 + a6_4 * p203 + a6_5 * p211 + a6_7 * p217 + a6_8 *
 	p218 - p219 = 0;
 subject to pe220:
 	a5_1 * p92 + a5_2 * p156 + a5_4 * p204 + a5_5 * p212 + a5_6 * p216 - p220 = 0;
 subject to pe221:
-	a6_1 * p93 + a6_2 * p157 + a6_4 * p205 + a6_5 * p213 + a6_6 * p217 + a6_8 * 
+	a6_1 * p93 + a6_2 * p157 + a6_4 * p205 + a6_5 * p213 + a6_6 * p217 + a6_8 *
 	p220 - p221 = 0;
 subject to pe222:
-	a6_1 * p94 + a6_2 * p158 + a6_4 * p206 + a6_5 * p214 + a6_6 * p218 + a6_7 * 
+	a6_1 * p94 + a6_2 * p158 + a6_4 * p206 + a6_5 * p214 + a6_6 * p218 + a6_7 *
 	p220 - p222 = 0;
 subject to pe223:
-	a7_1 * p95 + a7_2 * p159 + a7_4 * p207 + a7_5 * p215 + a7_6 * p219 + a7_7 * 
+	a7_1 * p95 + a7_2 * p159 + a7_4 * p207 + a7_5 * p215 + a7_6 * p219 + a7_7 *
 	p221 + a7_8 * p222 - p223 = 0;
 subject to pe224:
 	a3_1 * p96 + a3_2 * p160 + a3_3 * p192 - p224 = 0;
@@ -1114,7 +1114,7 @@ subject to pe229:
 subject to pe230:
 	a5_1 * p102 + a5_2 * p166 + a5_3 * p198 + a5_6 * p226 + a5_7 * p228 - p230 = 0;
 subject to pe231:
-	a6_1 * p103 + a6_2 * p167 + a6_3 * p199 + a6_6 * p227 + a6_7 * p229 + a6_8 * 
+	a6_1 * p103 + a6_2 * p167 + a6_3 * p199 + a6_6 * p227 + a6_7 * p229 + a6_8 *
 	p230 - p231 = 0;
 subject to pe232:
 	a4_1 * p104 + a4_2 * p168 + a4_3 * p200 + a4_5 * p224 - p232 = 0;
@@ -1123,18 +1123,18 @@ subject to pe233:
 subject to pe234:
 	a5_1 * p106 + a5_2 * p170 + a5_3 * p202 + a5_5 * p226 + a5_7 * p232 - p234 = 0;
 subject to pe235:
-	a6_1 * p107 + a6_2 * p171 + a6_3 * p203 + a6_5 * p227 + a6_7 * p233 + a6_8 * 
+	a6_1 * p107 + a6_2 * p171 + a6_3 * p203 + a6_5 * p227 + a6_7 * p233 + a6_8 *
 	p234 - p235 = 0;
 subject to pe236:
 	a5_1 * p108 + a5_2 * p172 + a5_3 * p204 + a5_5 * p228 + a5_6 * p232 - p236 = 0;
 subject to pe237:
-	a6_1 * p109 + a6_2 * p173 + a6_3 * p205 + a6_5 * p229 + a6_6 * p233 + a6_8 * 
+	a6_1 * p109 + a6_2 * p173 + a6_3 * p205 + a6_5 * p229 + a6_6 * p233 + a6_8 *
 	p236 - p237 = 0;
 subject to pe238:
-	a6_1 * p110 + a6_2 * p174 + a6_3 * p206 + a6_5 * p230 + a6_6 * p234 + a6_7 * 
+	a6_1 * p110 + a6_2 * p174 + a6_3 * p206 + a6_5 * p230 + a6_6 * p234 + a6_7 *
 	p236 - p238 = 0;
 subject to pe239:
-	a7_1 * p111 + a7_2 * p175 + a7_3 * p207 + a7_5 * p231 + a7_6 * p235 + a7_7 * 
+	a7_1 * p111 + a7_2 * p175 + a7_3 * p207 + a7_5 * p231 + a7_6 * p235 + a7_7 *
 	p237 + a7_8 * p238 - p239 = 0;
 subject to pe240:
 	a4_1 * p112 + a4_2 * p176 + a4_3 * p208 + a4_4 * p224 - p240 = 0;
@@ -1143,41 +1143,41 @@ subject to pe241:
 subject to pe242:
 	a5_1 * p114 + a5_2 * p178 + a5_3 * p210 + a5_4 * p226 + a5_7 * p240 - p242 = 0;
 subject to pe243:
-	a6_1 * p115 + a6_2 * p179 + a6_3 * p211 + a6_4 * p227 + a6_7 * p241 + a6_8 * 
+	a6_1 * p115 + a6_2 * p179 + a6_3 * p211 + a6_4 * p227 + a6_7 * p241 + a6_8 *
 	p242 - p243 = 0;
 subject to pe244:
 	a5_1 * p116 + a5_2 * p180 + a5_3 * p212 + a5_4 * p228 + a5_6 * p240 - p244 = 0;
 subject to pe245:
-	a6_1 * p117 + a6_2 * p181 + a6_3 * p213 + a6_4 * p229 + a6_6 * p241 + a6_8 * 
+	a6_1 * p117 + a6_2 * p181 + a6_3 * p213 + a6_4 * p229 + a6_6 * p241 + a6_8 *
 	p244 - p245 = 0;
 subject to pe246:
-	a6_1 * p118 + a6_2 * p182 + a6_3 * p214 + a6_4 * p230 + a6_6 * p242 + a6_7 * 
+	a6_1 * p118 + a6_2 * p182 + a6_3 * p214 + a6_4 * p230 + a6_6 * p242 + a6_7 *
 	p244 - p246 = 0;
 subject to pe247:
-	a7_1 * p119 + a7_2 * p183 + a7_3 * p215 + a7_4 * p231 + a7_6 * p243 + a7_7 * 
+	a7_1 * p119 + a7_2 * p183 + a7_3 * p215 + a7_4 * p231 + a7_6 * p243 + a7_7 *
 	p245 + a7_8 * p246 - p247 = 0;
 subject to pe248:
 	a5_1 * p120 + a5_2 * p184 + a5_3 * p216 + a5_4 * p232 + a5_5 * p240 - p248 = 0;
 subject to pe249:
-	a6_1 * p121 + a6_2 * p185 + a6_3 * p217 + a6_4 * p233 + a6_5 * p241 + a6_8 * 
+	a6_1 * p121 + a6_2 * p185 + a6_3 * p217 + a6_4 * p233 + a6_5 * p241 + a6_8 *
 	p248 - p249 = 0;
 subject to pe250:
-	a6_1 * p122 + a6_2 * p186 + a6_3 * p218 + a6_4 * p234 + a6_5 * p242 + a6_7 * 
+	a6_1 * p122 + a6_2 * p186 + a6_3 * p218 + a6_4 * p234 + a6_5 * p242 + a6_7 *
 	p248 - p250 = 0;
 subject to pe251:
-	a7_1 * p123 + a7_2 * p187 + a7_3 * p219 + a7_4 * p235 + a7_5 * p243 + a7_7 * 
+	a7_1 * p123 + a7_2 * p187 + a7_3 * p219 + a7_4 * p235 + a7_5 * p243 + a7_7 *
 	p249 + a7_8 * p250 - p251 = 0;
 subject to pe252:
-	a6_1 * p124 + a6_2 * p188 + a6_3 * p220 + a6_4 * p236 + a6_5 * p244 + a6_6 * 
+	a6_1 * p124 + a6_2 * p188 + a6_3 * p220 + a6_4 * p236 + a6_5 * p244 + a6_6 *
 	p248 - p252 = 0;
 subject to pe253:
-	a7_1 * p125 + a7_2 * p189 + a7_3 * p221 + a7_4 * p237 + a7_5 * p245 + a7_6 * 
+	a7_1 * p125 + a7_2 * p189 + a7_3 * p221 + a7_4 * p237 + a7_5 * p245 + a7_6 *
 	p249 + a7_8 * p252 - p253 = 0;
 subject to pe254:
-	a7_1 * p126 + a7_2 * p190 + a7_3 * p222 + a7_4 * p238 + a7_5 * p246 + a7_6 * 
+	a7_1 * p126 + a7_2 * p190 + a7_3 * p222 + a7_4 * p238 + a7_5 * p246 + a7_6 *
 	p250 + a7_7 * p252 - p254 = 0;
 subject to pe255:
-	a8_1 * p127 + a8_2 * p191 + a8_3 * p223 + a8_4 * p239 + a8_5 * p247 + a8_6 * 
+	a8_1 * p127 + a8_2 * p191 + a8_3 * p223 + a8_4 * p239 + a8_5 * p247 + a8_6 *
 	p251 + a8_7 * p253 + a8_8 * p254 - p255 = 0;
 subject to c1:
 	a1_1 + a2_1 + a3_1 + a4_1 + a5_1 + a6_1 + a7_1 + a8_1 - 1.0 = 0;
@@ -1209,317 +1209,3 @@ subject to r6:
 	a6_1 + a6_2 + a6_3 + a6_4 + a6_5 + a6_6 + a6_7 + a6_8 - 1.0 = 0;
 subject to r7:
 	a7_1 + a7_2 + a7_3 + a7_4 + a7_5 + a7_6 + a7_7 + a7_8 - 1.0 = 0;
-
-solve;
-	display p3;
-	display p5;
-	display p6;
-	display p7;
-	display p9;
-	display p10;
-	display p11;
-	display p12;
-	display p13;
-	display p14;
-	display p15;
-	display p17;
-	display p18;
-	display p19;
-	display p20;
-	display p21;
-	display p22;
-	display p23;
-	display p24;
-	display p25;
-	display p26;
-	display p27;
-	display p28;
-	display p29;
-	display p30;
-	display p31;
-	display p33;
-	display p34;
-	display p35;
-	display p36;
-	display p37;
-	display p38;
-	display p39;
-	display p40;
-	display p41;
-	display p42;
-	display p43;
-	display p44;
-	display p45;
-	display p46;
-	display p47;
-	display p48;
-	display p49;
-	display p50;
-	display p51;
-	display p52;
-	display p53;
-	display p54;
-	display p55;
-	display p56;
-	display p57;
-	display p58;
-	display p59;
-	display p60;
-	display p61;
-	display p62;
-	display p63;
-	display p65;
-	display p66;
-	display p67;
-	display p68;
-	display p69;
-	display p70;
-	display p71;
-	display p72;
-	display p73;
-	display p74;
-	display p75;
-	display p76;
-	display p77;
-	display p78;
-	display p79;
-	display p80;
-	display p81;
-	display p82;
-	display p83;
-	display p84;
-	display p85;
-	display p86;
-	display p87;
-	display p88;
-	display p89;
-	display p90;
-	display p91;
-	display p92;
-	display p93;
-	display p94;
-	display p95;
-	display p96;
-	display p97;
-	display p98;
-	display p99;
-	display p100;
-	display p101;
-	display p102;
-	display p103;
-	display p104;
-	display p105;
-	display p106;
-	display p107;
-	display p108;
-	display p109;
-	display p110;
-	display p111;
-	display p112;
-	display p113;
-	display p114;
-	display p115;
-	display p116;
-	display p117;
-	display p118;
-	display p119;
-	display p120;
-	display p121;
-	display p122;
-	display p123;
-	display p124;
-	display p125;
-	display p126;
-	display p127;
-	display p129;
-	display p130;
-	display p131;
-	display p132;
-	display p133;
-	display p134;
-	display p135;
-	display p136;
-	display p137;
-	display p138;
-	display p139;
-	display p140;
-	display p141;
-	display p142;
-	display p143;
-	display p144;
-	display p145;
-	display p146;
-	display p147;
-	display p148;
-	display p149;
-	display p150;
-	display p151;
-	display p152;
-	display p153;
-	display p154;
-	display p155;
-	display p156;
-	display p157;
-	display p158;
-	display p159;
-	display p160;
-	display p161;
-	display p162;
-	display p163;
-	display p164;
-	display p165;
-	display p166;
-	display p167;
-	display p168;
-	display p169;
-	display p170;
-	display p171;
-	display p172;
-	display p173;
-	display p174;
-	display p175;
-	display p176;
-	display p177;
-	display p178;
-	display p179;
-	display p180;
-	display p181;
-	display p182;
-	display p183;
-	display p184;
-	display p185;
-	display p186;
-	display p187;
-	display p188;
-	display p189;
-	display p190;
-	display p191;
-	display p192;
-	display p193;
-	display p194;
-	display p195;
-	display p196;
-	display p197;
-	display p198;
-	display p199;
-	display p200;
-	display p201;
-	display p202;
-	display p203;
-	display p204;
-	display p205;
-	display p206;
-	display p207;
-	display p208;
-	display p209;
-	display p210;
-	display p211;
-	display p212;
-	display p213;
-	display p214;
-	display p215;
-	display p216;
-	display p217;
-	display p218;
-	display p219;
-	display p220;
-	display p221;
-	display p222;
-	display p223;
-	display p224;
-	display p225;
-	display p226;
-	display p227;
-	display p228;
-	display p229;
-	display p230;
-	display p231;
-	display p232;
-	display p233;
-	display p234;
-	display p235;
-	display p236;
-	display p237;
-	display p238;
-	display p239;
-	display p240;
-	display p241;
-	display p242;
-	display p243;
-	display p244;
-	display p245;
-	display p246;
-	display p247;
-	display p248;
-	display p249;
-	display p250;
-	display p251;
-	display p252;
-	display p253;
-	display p254;
-	display p255;
-	display a1_1;
-	display a1_2;
-	display a1_3;
-	display a1_4;
-	display a1_5;
-	display a1_6;
-	display a1_7;
-	display a1_8;
-	display a2_1;
-	display a2_2;
-	display a2_3;
-	display a2_4;
-	display a2_5;
-	display a2_6;
-	display a2_7;
-	display a2_8;
-	display a3_1;
-	display a3_2;
-	display a3_3;
-	display a3_4;
-	display a3_5;
-	display a3_6;
-	display a3_7;
-	display a3_8;
-	display a4_1;
-	display a4_2;
-	display a4_3;
-	display a4_4;
-	display a4_5;
-	display a4_6;
-	display a4_7;
-	display a4_8;
-	display a5_1;
-	display a5_2;
-	display a5_3;
-	display a5_4;
-	display a5_5;
-	display a5_6;
-	display a5_7;
-	display a5_8;
-	display a6_1;
-	display a6_2;
-	display a6_3;
-	display a6_4;
-	display a6_5;
-	display a6_6;
-	display a6_7;
-	display a6_8;
-	display a7_1;
-	display a7_2;
-	display a7_3;
-	display a7_4;
-	display a7_5;
-	display a7_6;
-	display a7_7;
-	display a7_8;
-	display a8_1;
-	display a8_2;
-	display a8_3;
-	display a8_4;
-	display a8_5;
-	display a8_6;
-	display a8_7;
-	display a8_8;
-display obj;

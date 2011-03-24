@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   N. Gould, private communication.
@@ -35,7 +35,3 @@ subject to cons2:
 	-1D+10 <= x[3] <= 1;
 subject to cons3:
 	x[4] = 2;
-
-solve;
-display f;
-display x;

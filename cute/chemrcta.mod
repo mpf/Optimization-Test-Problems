@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: Problem 8, eqs (8.6)--(8.9) in
 #   J.J. More',
@@ -44,7 +44,7 @@ subject to cons1:
 	(cu1*u[2]-u[1]+h*pem) = 0;
 subject to cons2:
 	(ct1*t[2]-t[1]+h*peh) = 0;
-subject to cons3{i in 2..n-1}: 
+subject to cons3{i in 2..n-1}:
 	(-d*u[i]*exp(gamma-gamma/t[i])+(cui1)*u[i-1] + cui*u[i] + u[i+1]/(h^2*pem)) = 0;
 subject to cons4{i in 2..n-1}:
 	(b*d*u[i]*exp(gamma-gamma/t[i])+(cti1)*t[i-1] + cti*t[i] + t[i+1]/(h^2*peh)) = 0;
@@ -52,7 +52,3 @@ subject to cons5:
 	(u[n]-u[n-1]) = 0;
 subject to cons6:
 	(t[n]-t[n-1]) = 0;
-
-solve;
-display f;
-display t, u;

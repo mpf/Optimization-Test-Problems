@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: problem 111 in
 #   W. Hock and K. Schittkowski,
@@ -26,21 +26,21 @@ var x {1..10};
 
 param c {1..10};
 
-minimize obj: 
+minimize obj:
   sum {j in 1..10} exp(x[j])*(c[j] + x[j] - log(sum {k in 1..10} exp(x[k])));
 
-subject to cons1: 
+subject to cons1:
   exp(x[1]) + 2*exp(x[2]) + 2*exp(x[3]) + exp(x[6]) + exp(x[10]) = 2;
 
-subject to cons2: 
+subject to cons2:
   exp(x[4]) + 2*exp(x[5]) + exp(x[6]) + exp(x[7]) = 1;
 
-subject to cons3: 
+subject to cons3:
   exp(x[3]) + exp(x[7]) + exp(x[8]) + 2*exp(x[9]) + exp(x[10]) = 1;
 
 data;
 
-param c := 
+param c :=
   1  -6.089
   2 -17.164
   3 -34.054
@@ -54,12 +54,3 @@ param c :=
  ;
 
 let {j in 1..10} x[j] := -2.3;
-
-
-solve;
-
-display x;
-
-display obj;
-
-display obj + 47.76109026;

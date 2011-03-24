@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   L.C.W. Dixon and Z. Maany,
@@ -37,7 +37,3 @@ minimize f:
 	sum {i in 1..N-1} beta*x[i]^2*(x[i+1]+x[i+1]^2)^2*(i/N)^K[2] +
 	sum {i in 1..2*M} gamma*x[i]^2*x[i+M]^4*(i/N)^K[3] +
 	sum {i in 1..M} delta*x[i]*x[i+2*M]*(i/N)^K[4];
-
-solve;
-display f;
-display x;

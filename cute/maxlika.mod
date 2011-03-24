@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source:
 #   Ph. Toint and A. Griewank.
@@ -170,13 +170,13 @@ let x[8] :=   15.8;
 #let x[7] :=   15.77170;
 #let x[8] :=   20.74682;
 
-#display obj;
+#
 
-solve;
 
-display x;
 
-display obj;
 
-#display obj - 1138.416240;  # this is answer given by HS, but is seems wrong
-display obj - 1136.36;  # this seems to be correct (MINOS=LOQO)
+
+
+
+#  # this is answer given by HS, but is seems wrong
+  # this seems to be correct (MINOS=LOQO)

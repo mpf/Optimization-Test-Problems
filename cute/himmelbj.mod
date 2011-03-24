@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: problem 6 in
 #   D.H. Himmelblau,
@@ -38,13 +38,13 @@ minimize f:
  	X[5,1]*-16.79 +X[5,3]*18.9779+
  	X[6,2]*11.959+X[7,2]*12.899+
 	sum {k in 1..NSETS, j in 1..NS[k]} X[k,j]*log(X[k,j]) -
-	sum {j in 1..4} X[1,j]*log(sum {i in 1..4} X[1,i]) - 
-	sum {j in 1..13} X[2,j]*log(sum {i in 1..13} X[2,i]) - 
-	sum {j in 1..18} X[3,j]*log(sum {i in 1..18} X[3,i]) - 
-	sum {j in 1..3} X[4,j]*log(sum {i in 1..3} X[4,i]) - 
-	sum {j in 1..3} X[5,j]*log(sum {i in 1..3} X[5,i]) - 
-	sum {j in 1..2} X[6,j]*log(sum {i in 1..2} X[6,i]) - 
-	sum {j in 1..2} X[7,j]*log(sum {i in 1..2} X[7,i])  
+	sum {j in 1..4} X[1,j]*log(sum {i in 1..4} X[1,i]) -
+	sum {j in 1..13} X[2,j]*log(sum {i in 1..13} X[2,i]) -
+	sum {j in 1..18} X[3,j]*log(sum {i in 1..18} X[3,i]) -
+	sum {j in 1..3} X[4,j]*log(sum {i in 1..3} X[4,i]) -
+	sum {j in 1..3} X[5,j]*log(sum {i in 1..3} X[5,i]) -
+	sum {j in 1..2} X[6,j]*log(sum {i in 1..2} X[6,i]) -
+	sum {j in 1..2} X[7,j]*log(sum {i in 1..2} X[7,i])
 	;
 
 subject to cons1:
@@ -94,8 +94,3 @@ param NS:=
 5	3
 6	2
 7	2;
-
-option presolve_eps 0.000001;
-solve;
-display f;
-display X;

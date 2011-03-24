@@ -7,9 +7,9 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
-#   Source: 
+#   Source:
 #   M.M. Makela,
 #   "Nonsmooth optimization",
 #   Ph.D. thesis, Jyvaskyla University, 1990
@@ -27,8 +27,3 @@ var u;
 minimize obj: u;
 
 subject to f {i in 1..50}: u >= 50*x[i] - sum {j in 1..50} x[j];
-
-solve;
-display x;
-display u;
-display obj;

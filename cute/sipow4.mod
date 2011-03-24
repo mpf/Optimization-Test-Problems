@@ -7,7 +7,7 @@
 # its documentation for any purpose and without fee is hereby
 # granted, provided that the above copyright notice appear in all
 # copies and that the copyright notice and this
-# permission notice appear in all supporting documentation.                     
+# permission notice appear in all supporting documentation.
 
 #   Source: problem 4 in
 #   M. J. D. Powell,
@@ -38,5 +38,3 @@ param xinit:=
 2	0.0
 3	0.0
 4	1.2;
-
-solve; display f; display x;
