@@ -19,7 +19,6 @@
 
 #   classification QQR2-AN-2-1
 
-param xinit{1..2};
 var x{1..2};
 minimize f:
 	100*x[1]^2+100*x[2]^2-x[1]-100;
@@ -27,4 +26,5 @@ subject to cons1:
 	x[1]^2+x[2]^2-1.0=0;
 
 data;
-param xinit:= 1 0.08 2 0.06;
+let x[0] := 0.08;
+let x[1] := 0.06;
