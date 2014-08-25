@@ -17,3 +17,4 @@ do
         -e :a -e '/^\n*$/{$d;N;ba' -e '}' \
         ${problem}.new > ${problem}
     rm -f ${problem}.new
+done
