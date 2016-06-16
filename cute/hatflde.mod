@@ -17,12 +17,12 @@
 
 #   classification SUR2-AN-3-0
 
-param t {1..10};
-param z {1..10};
+param t {1..21};
+param z {1..21};
 
 var x {1..3};
 
-minimize obj: sum {j in 1..10} (exp(t[j]*x[3]) - x[1]*exp(t[j]*x[2]) + z[j])^2;
+minimize obj: sum {j in 1..21} (exp(t[j]*x[3]) - x[1]*exp(t[j]*x[2]) + z[j])^2;
 
 let x[1] :=  1.0;
 let x[2] := -1.0;
