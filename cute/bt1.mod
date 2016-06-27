@@ -26,5 +26,5 @@ subject to cons1:
 	x[1]^2+x[2]^2-1.0=0;
 
 data;
-let x[0] := 0.08;
-let x[1] := 0.06;
+let x[1] := 0.08;
+let x[2] := 0.06;
