@@ -19,7 +19,7 @@ param N:=10000;
 param K:=10;
 param sc := 12.0;
 param scale{i in 1..N} := exp((i-1)*sc/(N-1));
-var x{i in 1..N} := 0.0001*scale[i]/(N+1);
+var x{i in 1..N} := 0.0001*i*scale[i]/(N+1);
 var y{i in 1..N-K} = sum {j in i..i+K} x[j]*scale[j];
 var z{i in N-K+1..N} = sum {j in i..N} x[j]*scale[j];
 
