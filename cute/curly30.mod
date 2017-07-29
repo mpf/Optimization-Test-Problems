@@ -18,7 +18,7 @@
 param N:=10000;
 param K:=30;
 
-var x{1..N} := 0.0001/(N+1);
+var x{i in 1..N} := 0.0001 * i / (N+1);
 var Q{i in 1..N} = if (i <= N-K) then (sum {j in i..i+K} x[j]) else (sum {j in i..N} x[j]);
 
 minimize f:
